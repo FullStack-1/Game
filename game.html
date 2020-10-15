@@ -16,7 +16,7 @@
             var choices=["rock","paper","scissor"];
             var i=Math.floor(Math.random()*3);
             var comp=choices[i];
-            var x;
+            var x=0;
             return i;
         }
         function totalRound(){
@@ -27,16 +27,27 @@
             else{
                 alert("player",player)
             }
-            
-            
-            
         }
+        function default_img(){
+            if(x>=0)
+            {   $('h2').css('display','none');
+                $('button').css('display','none');
+                $('.default_left').css('display','block');
+                $('span').css('display','block');
+                $('.default_right').css('display','block');
+
+            }
+
+            }
+        
         $(document).ready(function(){
             
             $('.zero').click(function(){
+                
                 totalRound();
                 var i=random();
                 x=0;
+                default_img();
                 if(i==0){
                     $("#text").text("draw as computer also selects rock");
                 
@@ -52,6 +63,7 @@
                     $("#text").text("USER win as computer selects scissor");
                     player=player+1;
                 }
+                
             });
             $('.one').click(function(){
                 totalRound();
@@ -116,7 +128,12 @@
             <button><i class="fa fa-hand-rock-o zero" aria-hidden="true"></i></button>
             <button><i class="fa fa-hand-paper-o one" aria-hidden="true"></i></button>
             <button><i class="fa fa-hand-scissors-o two" aria-hidden="true"></i></button>
+            <img src="https://algebra2.thinkport.org/module6/images/task-8/rock-you.png" class="default_left" style="display: none;">
+            <span style="display: none;">VS</span>
+            <img src="https://algebra2.thinkport.org/module6/images/task-8/rock-cpu.png" class="default_right" style="display: none;">
 
+            
+            
         </div>
 
     </div>

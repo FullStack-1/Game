@@ -38,3 +38,22 @@ body{
     height:200px;width:200px;background-color: rgb(128, 18, 18);box-shadow: 1px 10px 5px 1px rgb(39, 39, 39);float: left;
     margin-left: 28px;
 }
+.default_left{
+    width:20rem;
+    height:10rem;
+    padding-top:2rem;padding-left: 1rem;float: left;transition: .5s ease-in-out;
+    
+}
+
+.default_right{
+    width:20rem;
+    position:relative;
+    height: 10rem;
+    padding-top:2rem;padding-right:1rem;left:15rem;
+    
+}
+.box span{
+    top:5rem;font-size:5rem;position: absolute;left:30rem;
+    text-shadow: 3px 0px 5px rgb(24, 23, 23);
+
+}
