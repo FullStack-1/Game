@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+
+        $(".sound").on({
+            
+            click: function(){
+                
+                $(".sound").toggle()
+            }  
+
+        });
+        
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <button class="info" ><i class="fa fa-info"></i></button>        
+        <button class="sound sound-off" style="display: none;"><i class="fa fa-volume-off" ></i></button>
+        <button class="sound sound-on"><i class="fa fa-volume-up"></i></button>
+    </header>
+
+    <div class="rock"></div>
+    <div class="paper">
+        <button class="play" ><i class="fa fa-play"></i></button>
+    </div>
+    <div class="scissors"></div>
+    <script> 
+            
+    </script> 
+</body>
+</html>
