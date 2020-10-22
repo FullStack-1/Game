@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#box3 {
+      width: 0px;
+      height: 0;
+      border-right: 10px solid #2ca8c7;
+      border-left:100px solid #2ca8c7;
+      border-top: 100px solid #2ca8c7;
+      position: relative;
+      box-shadow: 4px 4px 10px gray;
+      
+
+    }
+    #box3:after {
+        width: 0px;
+      height: 0;
+       border-right: 97px solid cyan;
+      border-left:10px solid transparent;
+      border-top: 90px solid  cyan;
+      position: absolute;
+      content: "";
+      top: -100px;
+      left: -100px;
+    }
+</style>
+</head>
+<body>
+
+<div id="box3">
+</div>
+
+</body>
+</html>

@@ -43,16 +43,16 @@
   .box1 {
     width: 14vw;
     height: 11vh;
-    background-color: #00838f;
+    background-color: #17c0eb;
     position: absolute;
     right: 25vw;
     top: 18vh;
-  }
-  .box1 {
+    box-shadow: 0 1vh #2ca8c7;
+    border-radius:0.3vw;
     font-size: 8vh;
     line-height: 12vh;
     color: black;
-  }
+  } 
   .active {
     display: inline-block;
     text-align: center;
