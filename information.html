@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            margin: 0 auto;
+            position: relative;
+            width: 400px;
+            height: 400px;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            text-align: center; 
+             
+        } 
+        
+        .container span:nth-child(1) {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to right, #00E676, #76FF03);
+            opacity: 0.9;
+            border-radius:  38% 62% 63% 37%/ 41% 44% 56% 59%;
+            transition: 0.5s;
+            animation: animate 4s linear infinite;
+        }
+        
+        .container:hover span:nth-child(1) {
+            border: none;
+        }
+        
+        .container span:nth-child(2) {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to right, #42A5F5, #00796B);
+            /* background-color: red; */
+            border-radius: 38% 62% 63% 37%/ 41% 44% 56% 59%;
+            transition: 0.5s;
+            /* animation: alternate; */
+        }
+        
+        @keyframes animate {
+            0% {
+                transform: rotate(360deg);
+            }
+            100% {
+                transform: rotate(0deg);
+            }
+        }
+        
+        .content {
+            position: relative;
+        }
+        
+        .content p {
+            font-family: 'Architects Daughter', cursive;
+            font-weight: 1000;
+            font-size: 30px;
+        }
+        
+        button {
+            font-size: 40px;
+            height: 50px;
+            width: 50px;
+            margin: 10px;
+        }
+        
+        .check {
+            background-color: #cc322a;
+            color: #7e2317;
+            border: none;
+            box-shadow: 0 1.5vh #a12821;
+            outline: 0;
+        }
+        
+        .cross {
+            background-color: rgb(9, 90, 9);
+            color: green;
+            box-shadow: 0 1.5vh rgb(7, 68, 7);
+            border: none;
+        }
+        
+        .cross:active {
+            background-color: yellowgreen;
+            box-shadow: 0 0.8vh rgb(124, 167, 39);
+            transform: translateY(4px);
+        }
+        
+        .check:hover {
+            background-color: #d13931;
+        }
+        
+        .check:active {
+            background-color: #cc322a;
+            box-shadow: 0 0.8vh #cc322a;
+            transform: translateY(4px);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <span></span>
+        <span></span>
+
+        <div class="content">
+            <p>Are you sure?</p>
+            <button class="check"><i class="fa fa-check"></i></button>
+            <button class="cross"><i class="fa fa-times"></i></button>
+
+        </div>
+    </div>
+</body>
+
+</html>
