@@ -1,59 +1,105 @@
-*{
-    padding: 0;margin:0;box-sizing: border-box;
-    
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
-body{
-    background-image: radial-gradient(circle at center center, rgba(153, 234, 33,0.25) 0%, rgba(153, 234, 33,0.25) 12%,transparent 12%, transparent 83%,rgba(126, 80, 137,0.25) 83%, rgba(126, 80, 137,0.25) 100%),linear-gradient(67.5deg, hsl(189,81%,38%) 0%,hsl(189,81%,38%) 78%); background-size: 2rem 2rem;
+
+.box {
+    margin: 2rem auto;
+    width: 55rem;
+    height: 15rem;
+    background-image: linear-gradient(65deg, #091a46 50%, #182C61 50%);
+    border: none;
+    box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem grey;
+    border-radius: 8px;
 }
-.box{
-    margin:2rem auto;
-    width:55rem;height:15rem;background-image: linear-gradient(65deg,#091a46 50%,#182C61 50%);border: none;
-    box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem grey;border-radius:8px;
+
+.container .message {
+    width: 80%;
+    height: 30px;
+    box-shadow: 2px 2px 2px 2px grey;
+    background-color: chocolate;
+    top: 0;
 }
-.container .message{
-    width: 80%;height:30px;box-shadow: 2px 2px 2px 2px grey;background-color: chocolate;top: 0;
+
+.box button {
+    background-color: burlywood;
+    height: 8rem;
+    width: 8rem;
+    border-radius: 50%;
+    font-size: 4rem;
+    margin-left: 7.5rem;
+    margin-top: 3.5rem;
+    outline: none;
 }
-.box button{
-    background-color:burlywood;height:8rem;width:8rem;border-radius: 50%;
-    font-size:4rem;margin-left:7.5rem;margin-top:3.5rem;outline: none;
-}
-.box button i{
+
+.box button i {
     color: black;
 }
-.box h2{
-    padding: 20px;position: absolute;color: whitesmoke;
+
+.box h2 {
+    padding: 20px;
+    position: absolute;
+    color: whitesmoke;
 }
-.results-container{
-    width:50%;height:250px;margin:10px auto;border:1px solid black
+
+.results-container {
+    width: 50%;
+    height: 250px;
+    margin: 10px auto;
+    border: 1px solid black
 }
-.results-container .user{
-    height:200px;width:200px;background-color: rgb(12, 51, 124);box-shadow: 1px 10px 5px 1px rgb(39, 39, 39);float: left;
+
+.results-container .user {
+    height: 200px;
+    width: 200px;
+    background-color: rgb(12, 51, 124);
+    box-shadow: 1px 10px 5px 1px rgb(39, 39, 39);
+    float: left;
     margin-left: 20px;
 }
-.results-container .result{
-    height:180px;width:180px;background-color: rgb(131, 58, 82);box-shadow: 1px 10px 5px 1px rgb(39, 39, 39);float: left;
-    margin-top:21px;margin-left:27px;
+
+.results-container .result {
+    height: 180px;
+    width: 180px;
+    background-color: rgb(131, 58, 82);
+    box-shadow: 1px 10px 5px 1px rgb(39, 39, 39);
+    float: left;
+    margin-top: 21px;
+    margin-left: 27px;
 }
-.results-container .comp{
-    height:200px;width:200px;background-color: rgb(128, 18, 18);box-shadow: 1px 10px 5px 1px rgb(39, 39, 39);float: left;
+
+.results-container .comp {
+    height: 200px;
+    width: 200px;
+    background-color: rgb(128, 18, 18);
+    box-shadow: 1px 10px 5px 1px rgb(39, 39, 39);
+    float: left;
     margin-left: 28px;
 }
-.default_left{
-    width:20rem;
-    height:10rem;
-    padding-top:2rem;padding-left: 1rem;float: left;transition: .5s ease-in-out;
-    
-}
 
-.default_right{
-    width:20rem;
-    position:relative;
+.default_left {
+    width: 20rem;
     height: 10rem;
-    padding-top:2rem;padding-right:1rem;left:15rem;
-    
+    padding-top: 2rem;
+    padding-left: 1rem;
+    float: left;
+    transition: .5s ease-in-out;
 }
-.box span{
-    top:5rem;font-size:5rem;position: absolute;left:30rem;
-    text-shadow: 3px 0px 5px rgb(24, 23, 23);
 
+.default_right {
+    width: 20rem;
+    position: relative;
+    height: 10rem;
+    padding-top: 2rem;
+    padding-right: 1rem;
+    left: 15rem;
+}
+
+.box span {
+    top: 5rem;
+    font-size: 5rem;
+    position: absolute;
+    left: 30rem;
+    text-shadow: 3px 0px 5px rgb(24, 23, 23);
 }
