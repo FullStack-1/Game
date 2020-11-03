@@ -7,27 +7,39 @@
     <link rel="icon" href="https://www.flaticon.com/svg/static/icons/svg/808/808439.svg" type="image/x-icon" media="none">
     <link rel="stylesheet" href="game.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type = "text/javascript"src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type = "text/javascript"src = "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
     <script src="script.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Document</title>
+   
 
 </head>
-
 <body>
     <div class="container">
         <div class="box">
             <h2>Your Choice</h2>
             <p id="result"></p>
-            <button class="zero"><i class="fa fa-hand-rock-o" ></i></button>
-            <button class="one"><i class="fa fa-hand-paper-o" ></i></button>
-            <button class="two"><i class="fa fa-hand-scissors-o" ></i></button>
+            <button id="button" class="zero"><i class="fa fa-hand-rock-o" ></i></button>
+            <button id="button" class="one"><i class="fa fa-hand-paper-o" ></i></button>
+            <button id="button" class="two"><i class="fa fa-hand-scissors-o" ></i></button>
             <img src="https://algebra2.thinkport.org/module6/images/task-8/rock-you.png" class="default_left" style="display: none;">
             <span style="display: none;">VS</span>
             <img src="https://algebra2.thinkport.org/module6/images/task-8/rock-cpu.png" class="default_right" style="display: none;">
-
         </div>
-
     </div>
+    <script type = "text/javascript" language = "javascript">
+   
+        $(document).ready(function() {
+
+           $("#button").click(function(){
+              $(".default_left").effect( "shake", { direction: "up", times: 6, distance: 10}, 1000 )
+              $(".default_right").effect( "shake", { direction: "up", times: 6, distance: 10}, 1000 )
+           });
+               
+        });
+           
+     </script>
     <div class="results-container">
         <div class="user"></div>
         <div class="result"></div>
@@ -35,7 +47,7 @@
     </div>
 
     <p id="text">Kheloooooo</p>
-
+   
 
 
 </body>

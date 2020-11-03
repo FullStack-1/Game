@@ -1,0 +1,40 @@
+Live Demo
+<html>
+   <head>
+      <title>The jQuery Example</title>
+      <script type = "text/javascript"
+         src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+      </script>
+		
+      <script type = "text/javascript" 
+         src = "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js">
+      </script>
+		
+      <script type = "text/javascript" language = "javascript">
+   
+         $(document).ready(function() {
+
+            $("#button").click(function(){
+               $(".default_left").effect( "shake", { direction: "up", times: 6, distance: 20}, 1000 )
+               $(".default_right").effect( "shake", { direction: "up", times: 6, distance: 20}, 1000 )
+            });
+				
+         });
+			
+      </script>
+		
+      <style>
+         div{ width:100%; height:100%;}
+      </style>
+   </head>
+	
+   <body>
+      <p>Click the button</p>
+      <button id = "button"> Shake </button>
+        <div class="target">
+      <img src="https://algebra2.thinkport.org/module6/images/task-8/rock-you.png" class="default_left" style="display: none;">
+     <span style="display: block;">VS</span>
+      <img src="https://algebra2.thinkport.org/module6/images/task-8/rock-cpu.png" class="default_right" style="display: none;">
+    </div>
+    </body>
+</html>
