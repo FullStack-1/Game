@@ -83,7 +83,8 @@
     padding-top: 2rem;
     padding-left: 1rem;
     float: left;
-    transition: .5s ease-in-out;
+    position: relative;
+    
 }
 
 .default_right {
@@ -92,14 +93,15 @@
     height: 10rem;
     padding-top: 2rem;
     padding-right: 1rem;
-    left: 15rem;
+    /* left: 15rem; */
+    float: right;
 }
 
 .box span {
     top: 5rem;
     font-size: 5rem;
     position: absolute;
-    left: 30rem;
+    left: 40rem;
     text-shadow: 3px 0px 5px rgb(24, 23, 23);
 }
 

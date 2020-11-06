@@ -55,7 +55,6 @@ $(document).ready(function() {
             player = player + 1;
             winner();
         }
-
     });
     $('.one').click(function() {;
         var i = random();
@@ -90,7 +89,6 @@ $(document).ready(function() {
             computer = computer + 1;
         }
     });
-
 });
 var total_round = 0;
 var computer = 0;
@@ -103,7 +101,6 @@ function random() {
     var x = 0;
     return i;
 }
-
 function totalRound() {
     total_round = total_round + 1;
     if (total_round == 3) {
@@ -112,7 +109,6 @@ function totalRound() {
         alert("player", player);
     }
 }
-
 function default_img() {
 
     $('h2').css('display', 'none');
