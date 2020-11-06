@@ -44,15 +44,14 @@
 }
 
 .results-container {
-    width: 50%;
+    width: 35rem;
     height: 250px;
-    margin: 10px auto;
-    border: 1px solid black
+    margin: 0 auto;
 }
 
 .results-container .user {
-    height: 200px;
-    width: 200px;
+    height: 10rem;
+    width: 10rem;
     background-color: rgb(12, 51, 124);
     box-shadow: 1px 10px 5px 1px rgb(39, 39, 39);
     float: left;
@@ -60,8 +59,8 @@
 }
 
 .results-container .result {
-    height: 180px;
-    width: 180px;
+    height: 8rem;
+    width: 8rem;
     background-color: rgb(131, 58, 82);
     box-shadow: 1px 10px 5px 1px rgb(39, 39, 39);
     float: left;
@@ -70,8 +69,8 @@
 }
 
 .results-container .comp {
-    height: 200px;
-    width: 200px;
+    height: 10rem;
+    width: 10rem;
     background-color: rgb(128, 18, 18);
     box-shadow: 1px 10px 5px 1px rgb(39, 39, 39);
     float: left;
@@ -102,4 +101,17 @@
     position: absolute;
     left: 30rem;
     text-shadow: 3px 0px 5px rgb(24, 23, 23);
+}
+
+.user {
+    padding-left: 1vw;
+}
+
+.user div {
+    height: 2rem;
+    width: 2rem;
+    margin: 1rem 0.3rem;
+    display: inline-block;
+    border-radius: 50%;
+    background-color: rgb(204, 202, 202);
 }

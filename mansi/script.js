@@ -19,16 +19,22 @@ function totalRound() {
     }
 }
 
-function default_img() {
+function winner() {
+    $('.block1').css('background-color', 'black');
+    if ($('.block1').css('background-color', 'black')) {
+        $('.block2').css('background-color', 'black');
+    }
+    if ($('.block2').css('background-color', 'black')) {
+        $('.block3').css('background-color', 'black');
+    }
+}
 
+function default_img() {
     $('h2').css('display', 'none');
     $('button').css('display', 'none');
     $('.default_left').css('display', 'block');
     $('span').css('display', 'block');
     $('.default_right').css('display', 'block');
-
-
-
 }
 
 $(document).ready(function() {
@@ -43,9 +49,11 @@ $(document).ready(function() {
         } else if (i == 1) {
             $("#text").text("Computer win as computer selects paper");
             computer = computer + 1;
+
         } else if (i == 2) {
             $("#text").text("USER win as computer selects scissor");
             player = player + 1;
+            winner();
         }
 
     });
@@ -112,9 +120,6 @@ function default_img() {
     $('.default_left').css('display', 'block');
     $('span').css('display', 'block');
     $('.default_right').css('display', 'block');
-
-
-
 }
 
 $(document).ready(function() {
@@ -146,6 +151,7 @@ $(document).ready(function() {
         } else if (i == 0) {
             $("#text").text("USER win as computer selects rock");
             player = player + 1;
+            winner();
         } else if (i == 2) {
             $("#text").text("Computer win as computer selects scissor");
             computer = computer + 1;
@@ -163,6 +169,7 @@ $(document).ready(function() {
         } else if (i == 1) {
             $("#text").text("USER win as computer selects paper");
             player = player + 1;
+            winner();
         } else if (i == 0) {
             $("#text").text("Computer win as computer selects rock");
             computer = computer + 1;
