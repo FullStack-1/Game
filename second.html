@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet"href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="second.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>second page</title>
@@ -13,6 +14,13 @@
         $(".sound").on({
           click: function () {
             $(".sound").toggle();
+          },
+        });
+      });
+      $(document).ready(function () {
+        $(".cross").on({
+          click: function () {
+            $(".container1").toggle();
           },
         });
       });
@@ -27,14 +35,24 @@
       <button class="sound sound-on"><i class="fa fa-volume-up"></i></button>
       <button class="cross"><i class="fa fa-times"></i></button>
     </header>
+    <div class="container1"style="display: none;">
+      <span></span>
+      <span></span>
+
+      <div class="content">
+          <p>Are you sure?</p>
+          <button class="chk"><i class="fa fa-check"></i></button>
+          <button class="cross1"><i class="fa fa-times"></i></button>
+      </div>
+  </div>
     <div class="container">
       <img src="img copy.jpeg" alt="" />
       <div class="sec">
         <h2>Start to play</h2>
         <div class="box1">
-          <i class="fa fa-desktop active" aria-hidden="true"></i>
+          <i class="fa fa-desktop act" aria-hidden="true"></i>
           <span class="head">vs</span>
-          <i class="fa fa-user active1" aria-hidden="true"></i>
+          <i class="fa fa-user act1" aria-hidden="true"></i>
         </div>
       </div>
       <div class="box2"></div>

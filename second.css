@@ -53,14 +53,14 @@
     line-height: 12vh;
     color: black;
   } 
-  .active {
+  .act {
     display: inline-block;
     text-align: center;
     justify-content: center;
     vertical-align: baseline;
     margin-left: 1vw;
   }
-  .active1 {
+  .act {
     display: inline-block;
     text-align: center;
     justify-content: center;
@@ -107,4 +107,109 @@
   color:#35405e;
   float: right;
   border-radius:0.3vw;
+}
+.container1 {
+  margin: 0 auto;
+  position: absolute;
+  z-index: 9;
+  top: 25vh;
+  width: 400px;
+  height: 400px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  text-align: center; 
+  left: 35vw;
+   
+} 
+
+.container1 span:nth-child(1) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, #C2185B, #E64A19);
+  opacity: 0.9;
+  border-radius:  48% 62% 63% 37%/ 41% 44% 56% 59%;
+  transition: 0.5s;
+  animation: animate 4s linear infinite;
+}
+
+.container1 :hover span:nth-child(1) {
+  border: none;
+}
+
+.container1 span:nth-child(2) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, #18FFFF, #009688);
+  border-radius: 38% 62% 63% 37%/ 41% 44% 56% 59%;
+  transition: 0.5s;
+  animation: animate 6s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+      transform: rotate(360deg);
+  }
+  100% {
+      transform: rotate(0deg);
+  }
+}
+
+ .content {
+  position: relative;
+} 
+
+.content p {
+  font-family: 'Architects Daughter', cursive;
+  font-weight: 1000;
+  font-size: 8vh;
+}
+
+.content button {
+  font-size: 40px;
+  height: 50px;
+  width: 50px;
+  margin: 10px;
+}
+
+.chk {
+  background-color: #cc322a;
+  color: #7e2317;
+  border: none;
+  box-shadow: 0 1.5vh #a12821;
+  position: relative;
+  top: 5vh;
+  left: 6vw;
+  float: left;
+}
+
+.cross1 {
+  background-color: rgb(9, 90, 9);
+  color: green;
+  box-shadow: 0 1.5vh rgb(7, 68, 7);
+  border: none;
+  position: relative;
+  top: 5vh;
+  right: 6vw;
+  float: right;
+}
+
+
+.cross1 :active {
+  background-color: yellowgreen;
+  box-shadow: 0 0.8vh rgb(124, 167, 39);
+  transform: translateY(8px);
+}
+
+
+.chk :active {
+  background-color: #d13931;
+  box-shadow: 0 0.8vh #d13931;
+  transform: translateY(8px);
 }
