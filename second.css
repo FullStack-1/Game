@@ -14,7 +14,7 @@
   }
   .container img {
     width: 100vw;
-    height: 98vh;
+    height: 100vh;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -41,11 +41,11 @@
     font-family: cursive;
   }
   .box1 {
-    width: 14vw;
+    width: 17vw;
     height: 11vh;
     background-color: #17c0eb;
     position: absolute;
-    right: 25vw;
+    right: 22vw;
     top: 18vh;
     box-shadow: 0 1vh #2ca8c7;
     border-radius:0.3vw;
@@ -58,9 +58,9 @@
     text-align: center;
     justify-content: center;
     vertical-align: baseline;
-    margin-left: 1vw;
+    margin-left: 2.5vw;
   }
-  .act {
+  .act1 {
     display: inline-block;
     text-align: center;
     justify-content: center;
@@ -81,7 +81,19 @@
     box-shadow: 0 1vh #2ca8c7;
     background-color: #17c0eb;
     margin-left: 88vw;
-   
+     }
+     .fullscreen {
+      margin-top: 5vh;
+      height: 9vh;
+      width: 5vw;
+      box-shadow: 0 1vh #2ca8c7;
+      background-color: #17c0eb;
+      margin-left: 82vw;
+  }
+  
+  .fullscreen:active {
+      box-shadow: 0 0.6vh #2ca8c7;
+      transform: translateY(4px);
   }
   .info {
     margin-top: 5vh;
@@ -91,14 +103,28 @@
     width: 5vw;
     box-shadow: 0 1vh #2ca8c7;
   }
+  .info:active {
+    box-shadow: 0 0.6vh #2ca8c7;
+    transform: translateY(4px);
+}
+
+ .sound:active {
+    box-shadow: 0 0.6vh #2ca8c7;
+    transform: translateY(4px);
+}
   .cross {
     margin-top: 5vh;
     background-color: #17c0eb;
     margin-left: 94vw;
     height: 9vh;
     width: 5vw;
-    box-shadow: 0 1vh #2ca8c7;}
-
+    box-shadow: 0 1vh #2ca8c7;
+  }
+  .cross:active {
+      box-shadow: 0 0.6vh #2ca8c7;
+      transform: translateY(4px);
+  
+  }
   button{
   outline: none;
   border: none;
