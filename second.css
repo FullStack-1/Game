@@ -2,8 +2,9 @@
     margin: 0;
     padding: 0;
     box-sizing: 0;
-  }
-  .container {
+}
+
+.container {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -11,16 +12,18 @@
     justify-content: center;
     align-items: center;
     /* position: relative; */
-  }
-  .container img {
+}
+
+.container img {
     width: 100vw;
-    height: 98vh;
+    height: 100vh;
     display: block;
     margin-left: auto;
     margin-right: auto;
     /* position: relative; */
-  }
-  .sec {
+}
+
+.sec {
     width: 60vw;
     height: 35vh;
     background-color: whitesmoke;
@@ -30,8 +33,9 @@
     border: none;
     box-shadow: 0.3em 0.3em 2px 12px #0099bc;
     /* margin-right: 8vw; */
-  }
-  .sec h2 {
+}
+
+.sec h2 {
     text-align: center;
     vertical-align: middle;
     line-height: 15vh;
@@ -39,8 +43,9 @@
     font-weight: bold;
     font-size: 8vh;
     font-family: cursive;
-  }
-  .box1 {
+}
+
+.box1 {
     width: 14vw;
     height: 11vh;
     background-color: #17c0eb;
@@ -48,168 +53,186 @@
     right: 25vw;
     top: 18vh;
     box-shadow: 0 1vh #2ca8c7;
-    border-radius:0.3vw;
+    border-radius: 0.3vw;
     font-size: 8vh;
     line-height: 12vh;
     color: black;
-  } 
-  .act {
+}
+
+.act {
     display: inline-block;
     text-align: center;
     justify-content: center;
     vertical-align: baseline;
     margin-left: 1vw;
-  }
-  .act {
+}
+
+.act {
     display: inline-block;
     text-align: center;
     justify-content: center;
     vertical-align: baseline;
-  }
+}
 
-  .box2 {
+.box2 {
     width: 65vw;
     height: 7vh;
     background-color: darkcyan;
     position: absolute;
     /* margin-right: 7vw; */
-  }
-  .sound {
+}
+
+.sound {
     margin-top: 5vh;
     height: 9vh;
     width: 5vw;
     box-shadow: 0 1vh #2ca8c7;
     background-color: #17c0eb;
     margin-left: 88vw;
-   
-  }
-  .info {
+}
+
+.info {
     margin-top: 5vh;
     background-color: #17c0eb;
-    margin-left: 2vw; 
+    margin-left: 2vw;
     height: 9vh;
     width: 5vw;
     box-shadow: 0 1vh #2ca8c7;
-  }
-  .cross {
+}
+
+.cross {
     margin-top: 5vh;
     background-color: #17c0eb;
     margin-left: 94vw;
     height: 9vh;
     width: 5vw;
-    box-shadow: 0 1vh #2ca8c7;}
-
-  button{
-  outline: none;
-  border: none;
-  font-size: 6vh;
-  position: absolute;
-  color:#35405e;
-  float: right;
-  border-radius:0.3vw;
+    box-shadow: 0 1vh #2ca8c7;
 }
+
+button {
+    outline: none;
+    border: none;
+    font-size: 6vh;
+    position: absolute;
+    color: #35405e;
+    float: right;
+    border-radius: 0.3vw;
+}
+
 .container1 {
-  margin: 0 auto;
-  position: absolute;
-  z-index: 9;
-  top: 25vh;
-  width: 400px;
-  height: 400px;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  text-align: center; 
-  left: 35vw;
-   
-} 
+    margin: 0 auto;
+    position: absolute;
+    z-index: 9;
+    top: 25vh;
+    width: 400px;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    left: 35vw;
+}
 
 .container1 span:nth-child(1) {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(to right, #C2185B, #E64A19);
-  opacity: 0.9;
-  border-radius:  48% 62% 63% 37%/ 41% 44% 56% 59%;
-  transition: 0.5s;
-  animation: animate 4s linear infinite;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #C2185B, #E64A19);
+    opacity: 0.9;
+    border-radius: 48% 62% 63% 37%/ 41% 44% 56% 59%;
+    transition: 0.5s;
+    animation: animate 4s linear infinite;
 }
 
 .container1 :hover span:nth-child(1) {
-  border: none;
+    border: none;
 }
 
 .container1 span:nth-child(2) {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(to right, #18FFFF, #009688);
-  border-radius: 38% 62% 63% 37%/ 41% 44% 56% 59%;
-  transition: 0.5s;
-  animation: animate 6s linear infinite;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #18FFFF, #009688);
+    border-radius: 38% 62% 63% 37%/ 41% 44% 56% 59%;
+    transition: 0.5s;
+    animation: animate 6s linear infinite;
 }
 
 @keyframes animate {
-  0% {
-      transform: rotate(360deg);
-  }
-  100% {
-      transform: rotate(0deg);
-  }
+    0% {
+        transform: rotate(360deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
 }
 
- .content {
-  position: relative;
-} 
+.content {
+    position: relative;
+}
 
 .content p {
-  font-family: 'Architects Daughter', cursive;
-  font-weight: 1000;
-  font-size: 8vh;
+    font-family: 'Architects Daughter', cursive;
+    font-weight: 1000;
+    font-size: 8vh;
 }
 
 .content button {
-  font-size: 40px;
-  height: 50px;
-  width: 50px;
-  margin: 10px;
+    font-size: 40px;
+    height: 50px;
+    width: 50px;
+    margin: 10px;
 }
 
 .chk {
-  background-color: #cc322a;
-  color: #7e2317;
-  border: none;
-  box-shadow: 0 1.5vh #a12821;
-  position: relative;
-  top: 5vh;
-  left: 6vw;
-  float: left;
+    background-color: #cc322a;
+    color: #7e2317;
+    border: none;
+    box-shadow: 0 1.5vh #a12821;
+    position: relative;
+    top: 5vh;
+    left: 6vw;
+    float: left;
 }
 
 .cross1 {
-  background-color: rgb(9, 90, 9);
-  color: green;
-  box-shadow: 0 1.5vh rgb(7, 68, 7);
-  border: none;
-  position: relative;
-  top: 5vh;
-  right: 6vw;
-  float: right;
+    background-color: rgb(9, 90, 9);
+    color: green;
+    box-shadow: 0 1.5vh rgb(7, 68, 7);
+    border: none;
+    position: relative;
+    top: 5vh;
+    right: 6vw;
+    float: right;
 }
-
 
 .cross1 :active {
-  background-color: yellowgreen;
-  box-shadow: 0 0.8vh rgb(124, 167, 39);
-  transform: translateY(8px);
+    background-color: yellowgreen;
+    box-shadow: 0 0.8vh rgb(124, 167, 39);
+    transform: translateY(8px);
 }
 
-
 .chk :active {
-  background-color: #d13931;
-  box-shadow: 0 0.8vh #d13931;
-  transform: translateY(8px);
+    background-color: #d13931;
+    box-shadow: 0 0.8vh #d13931;
+    transform: translateY(8px);
+}
+
+.info:active {
+    box-shadow: 0 0.6vh #2ca8c7;
+    transform: translateY(4px);
+}
+
+.sound:active {
+    box-shadow: 0 0.6vh #2ca8c7;
+    transform: translateY(4px);
+}
+
+.cross:active {
+    box-shadow: 0 0.6vh #2ca8c7;
+    transform: translateY(4px);
 }
