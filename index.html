@@ -1,48 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
-    <title>Document</title>
+    <title>Game</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
-        $(document).ready(function(){
+        $(document).ready(function() {
+            $(".sound").on({
+                click: function() {
+                    $(".sound").toggle();
+                }
+            });
 
-        $(".sound").on({
-            
-            click: function(){
-                
-                $(".sound").toggle()
-            }  
+            $(".fullscreen").on({
+                click: function() {
+                    $(".fullscreen").toggle();
+                }
+            });
         });
-        
-        });
+        var elem = document.documentElement;
+
+        function openFullscreen() {
+            if (elem.requestFullscreen) {
+                elem.requestFullscreen();
+            } else if (elem.mozRequestFullScreen) { /* Firefox */
+                elem.mozRequestFullScreen();
+            } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
+                elem.webkitRequestFullscreen();
+            } else if (elem.msRequestFullscreen) { /* IE/Edge */
+                elem.msRequestFullscreen();
+            }
+        }
+
+        function closeFullscreen() {
+            if (document.exitFullscreen) {
+                document.exitFullscreen();
+            } else if (document.mozCancelFullScreen) {
+                document.mozCancelFullScreen();
+            } else if (document.webkitExitFullscreen) {
+                document.webkitExitFullscreen();
+            } else if (document.msExitFullscreen) {
+                document.msExitFullscreen();
+            }
+        }
     </script>
 </head>
+
 <body>
     <header>
-        <button class="info" ><i class="fa fa-info"></i></button>        
+        <button class="info"><i class="fa fa-info"></i></button>
+        <button class="fullscreen fullscreen-off" onclick="closeFullscreen();" style="display: none;"><i class="fa fa-compress"></i></button>
+        <button class="fullscreen fullscreen-on" onclick="openFullscreen();"><i class="fa fa-expand"></i></button>
         <button class="sound sound-off" style="display: none;"><i class="fa fa-volume-off" ></i></button>
         <button class="sound sound-on"><i class="fa fa-volume-up"></i></button>
+
+
     </header>
 
     <div class="rock">
-        <img class="rock-banner"src="index-rock-banner.png" alt="">
-        <img class="hand-rock"src="index-Rock.png">
+        <img class="rock-banner" src="index-rock-banner.png" alt="">
+        <img class="hand-rock" src="index-Rock.png">
     </div>
     <div class="paper">
-        <img class="paper-banner"src="index-paper-banner.png" alt="">
-        <img class="hand-paper"src="index-paper.png">
-        <button class="play" ><i class="fa fa-play"></i></button>
+        <img class="paper-banner" src="index-paper-banner.png" alt="">
+        <img class="hand-paper" src="index-paper.png">
+        <button class="play"><i class="fa fa-play"></i></button>
     </div>
     <div class="scissors">
-        <img class="scissors-banner"src="index-scissors-banner.png" alt="">
-        <img class="hand-scissors"src="index-scissors.png">
+        <img class="scissors-banner" src="index-scissors-banner.png" alt="">
+        <img class="hand-scissors" src="index-scissors.png">
     </div>
-    <script> 
-            
-    </script> 
+    <script>
+    </script>
 </body>
+
 </html>
