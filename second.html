@@ -18,7 +18,37 @@
                         $(".sound").toggle();
                     },
                 });
+                $(".fullscreen").on({
+                    click: function() {
+                        $(".fullscreen").toggle();
+                    }
+                });
             });
+            var elem = document.documentElement;
+
+            function openFullscreen() {
+                if (elem.requestFullscreen) {
+                    elem.requestFullscreen();
+                } else if (elem.mozRequestFullScreen) { /* Firefox */
+                    elem.mozRequestFullScreen();
+                } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
+                    elem.webkitRequestFullscreen();
+                } else if (elem.msRequestFullscreen) { /* IE/Edge */
+                    elem.msRequestFullscreen();
+                }
+            }
+
+            function closeFullscreen() {
+                if (document.exitFullscreen) {
+                    document.exitFullscreen();
+                } else if (document.mozCancelFullScreen) {
+                    document.mozCancelFullScreen();
+                } else if (document.webkitExitFullscreen) {
+                    document.webkitExitFullscreen();
+                } else if (document.msExitFullscreen) {
+                    document.msExitFullscreen();
+                }
+            }
             $(document).ready(function() {
                 $(".cross").on({
                     click: function() {
@@ -32,8 +62,10 @@
     <body>
         <header>
             <button class="info"><i class="fa fa-info"></i></button>
+            <button class="fullscreen fullscreen-off" onclick="closeFullscreen();" style="display: none;"><i class="fa fa-compress"></i></button>
+            <button class="fullscreen fullscreen-on" onclick="openFullscreen();"><i class="fa fa-expand"></i></button>
             <button class="sound sound-off" style="display: none">
-        <i class="fa fa-volume-off"></i>
+      <i class="fa fa-volume-off"></i>
       </button>
             <button class="sound sound-on"><i class="fa fa-volume-up"></i></button>
             <button class="cross"><i class="fa fa-times"></i></button>
