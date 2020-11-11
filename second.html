@@ -68,6 +68,11 @@
 
 
             });
+            $(document).ready(function() {
+                $('body').on('dragstart', function() {
+                    return false;
+                });
+            });
         </script>
     </head>
 
