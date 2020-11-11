@@ -56,7 +56,7 @@
     border-radius: 0.3vw;
     font-size: 8vh;
     line-height: 12vh;
-    color: black;
+    color: #35405e;
 }
 
 .act {
@@ -239,18 +239,6 @@ button {
     float: right;
 }
 
-.cross1 :active {
-    background-color: yellowgreen;
-    box-shadow: 0 0.8vh rgb(124, 167, 39);
-    transform: translateY(8px);
-}
-
-.chk :active {
-    background-color: #d13931;
-    box-shadow: 0 0.8vh #d13931;
-    transform: translateY(8px);
-}
-
 .info:active {
     box-shadow: 0 0.6vh #2ca8c7;
     transform: translateY(4px);
@@ -262,6 +250,29 @@ button {
 }
 
 .cross:active {
+    box-shadow: 0 0.6vh #2ca8c7;
+    transform: translateY(4px);
+}
+
+.blur {
+    filter: blur(5px)
+}
+
+.noblur {
+    filter: blur(0px)
+}
+
+.chk:active {
+    box-shadow: 0 0.9vh #a12821;
+    transform: translateY(4px);
+}
+
+.cross1:active {
+    box-shadow: 0 0.9vh rgb(7, 68, 7);
+    transform: translateY(4px);
+}
+
+.box1:active {
     box-shadow: 0 0.6vh #2ca8c7;
     transform: translateY(4px);
 }

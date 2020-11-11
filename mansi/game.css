@@ -1,7 +1,17 @@
 * {
     padding: 0;
+    border: none;
+    outline: none;
     margin: 0;
     box-sizing: border-box;
+}
+
+body {
+    background-image: url("../img copy.jpeg");
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .box {
@@ -34,7 +44,7 @@
 }
 
 .box button i {
-    color: black;
+    color: #fad6a5;
 }
 
 .box h2 {
@@ -84,7 +94,6 @@
     padding-left: 1rem;
     float: left;
     position: relative;
-    
 }
 
 .default_right {
