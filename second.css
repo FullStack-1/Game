@@ -275,3 +275,135 @@ button {
     box-shadow: 0 0.6vh #2ca8c7;
     transform: translateY(0.4em);
 }
+
+i{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    
+}
+.I {
+    width: 55vw;
+    height: 65vh;
+    background-image: linear-gradient(45deg,#dfca65,  #f6e58d, #f6e58d, #e4d27b,#f0d862);
+    margin-top: 10vh;
+    position: absolute;
+    z-index: 9;
+    left: 25vw;
+    
+
+    
+  }
+  .I h1 {
+    text-align: center;
+    font-family: cursive;
+    font-size: 4vw;
+    color: #d50000;
+    padding-top: 4vh;
+  }
+  .I p {
+    font-family: cursive;
+    font-size: 2vw;
+    color: #d50000;
+    margin-left: 2vw;
+    line-height: 5vh;
+  }
+  .rec {
+    height: 20vh;
+    width: 4vw;
+    background-image: linear-gradient(to bottom, gold, cyan);
+    /* float: left; */
+    position: absolute;
+    z-index: 10;
+    top: 2vh;
+    left: 32vw;
+  }
+  .rec1 {
+    height: 20vh;
+    width: 4vw;
+    background-image: linear-gradient(to bottom, gold, cyan);
+    /* float: left; */
+    position: absolute;
+    z-index: 10;
+    top: 2vh;
+    right: 28vw;
+  }
+  .play1 {
+    position: absolute;
+    top: 60vh;
+    left: 25vw;
+    height: 12vh;
+    width: 6vw;
+    color: #0D47A1;
+    background-color: teal;
+    box-shadow: 0 1vh #2ca8c7;
+  }
+
+  .left {
+    position: absolute;
+    top: 60vh;
+    right: -2vw;
+    height: 10vh;
+    width: 5vw;
+    color: #0D47A1;
+    background-color: teal;
+    box-shadow: 0 1vh #2ca8c7;
+    -ms-transform: skewY(30deg); /* IE 9 */
+    transform: skewY(30deg);
+  }
+  .left:hover {
+    background-color: rgb(167, 223, 57);
+    box-shadow: 0 0.8vh rgb(124, 167, 39);
+  }
+
+  .left:active {
+    background-color: yellowgreen;
+    box-shadow: 0 0.8vh rgb(124, 167, 39);
+    transform: translateY(4px);
+    -ms-transform: skewY(30deg);
+   
+  }
+  .right {
+    position: absolute;
+    top: 60vh;
+    left: -2vw;
+    height: 10vh;
+    width: 5vw;
+    color: #0D47A1;
+    background-color: teal;
+    box-shadow: 0 1vh #2ca8c7;
+    -ms-transform: skewY(30deg);
+    transform: skewY(30deg);
+  }
+  .right:hover {
+    background-color: rgb(167, 223, 57);
+    box-shadow: 0 0.8vh rgb(124, 167, 39);
+
+  }
+
+  .right:active {
+    background-color: yellowgreen;
+    box-shadow: 0 0.8vh rgb(124, 167, 39);
+    transform: translateY(4px);
+    -ms-transform: skewY(30deg);
+  }
+ .I button {
+    outline: none;
+    border: none;
+    font-size: 8vh;
+    position: absolute;
+    color: #35405e;
+    text-align: center;
+    border-radius: 0.3vw;
+  }
+
+  .play1:hover {
+    background-color: rgb(167, 223, 57);
+    box-shadow: 0 0.8vh rgb(124, 167, 39);
+  }
+
+  .play1:active {
+    box-shadow: 0 0.8vh rgb(124, 167, 39);
+    transform: translateY(4px);
+  }

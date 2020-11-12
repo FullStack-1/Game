@@ -65,9 +65,24 @@
 
                     },
                 });
-
-
             });
+            $(document).ready(function() {
+                $(".info").on({
+                    click: function() {
+                        $(".i").toggle();
+
+                        $(".body").toggleClass("blur");
+
+                    },
+                });
+                $(".play1").on({
+                    click: function() {
+                        $(".i").toggle();
+                        $(".body").toggleClass("blur");
+
+                    },
+                });
+              });
             $(document).ready(function() {
                 $('body').on('dragstart', function() {
                     return false;
@@ -97,6 +112,21 @@
                 <button class="cross1"><i class="fa fa-times"></i></button>
             </div>
         </div>
+        <div class="i" style="display: none;">
+        <div class="rec"></div>
+        <div class="rec1"></div>
+        <div class="I">
+          <h1>Game Rules</h1>
+          <p>Beat Your opponent in 2 rounds out of 3 to win the match.</p>
+          <p>+10 pts for every round won.</p>
+          <p>-5 pts for every round lost.</p>
+          <p>0 pts for a draw round</p>
+          <p>Every match won will give you multiplier bonus!</p>
+          <button class="left"><i class="fa fa-angle-double-right"></i></button>
+          <button class="play1"><i class="fa fa-forward"></i></button>
+          <button class="right"><i class="fa fa-angle-double-left"></i></button>
+        </div>
+      </div>
         <div class="container">
             <img class="body" src="img copy.jpeg" alt="" />
             <div class="sec body">
@@ -110,7 +140,7 @@
                 </a>
             </div>
             <div class="box2">
-              
+
             </div>
         </div>
     </body>

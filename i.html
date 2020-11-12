@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Document</title>
+    <style>
+
+      .I {
+        width: 55vw;
+        height: 65vh;
+        background-image: linear-gradient(45deg,#dfca65,  #f6e58d, #f6e58d, #e4d27b,#f0d862);
+        margin: auto;
+        
+      }
+      .I h1 {
+        text-align: center;
+        font-family: cursive;
+        font-size: 4vw;
+        color: #d50000;
+        padding-top: 4vh;
+      }
+      .I p {
+        font-family: cursive;
+        font-size: 2vw;
+        color: #d50000;
+        margin-left: 2vw;
+        line-height: 3vh;
+      }
+      .rec {
+        height: 20vh;
+        width: 4vw;
+        background-image: linear-gradient(to bottom, gold, cyan);
+        float: left;
+        position: absolute;
+        top: 0vh;
+        left: 32vw;
+      }
+      .rec1 {
+        height: 20vh;
+        width: 4vw;
+        background-image: linear-gradient(to bottom, gold, cyan);
+        float: left;
+        position: absolute;
+        top: 0vh;
+        right: 32vw;
+      }
+      .play1 {
+        position: absolute;
+        top: 65vh;
+        left: 47vw;
+        height: 12vh;
+        width: 6vw;
+        color: #0D47A1;
+        background-color: teal;
+        box-shadow: 0 1vh #2ca8c7;
+      }
+
+      .left {
+        position: absolute;
+        top: 65vh;
+        right: 20vw;
+        height: 10vh;
+        width: 5vw;
+        color: #0D47A1;
+        background-color: teal;
+        box-shadow: 0 1vh #2ca8c7;
+        -ms-transform: skewY(30deg); /* IE 9 */
+        transform: skewY(30deg);
+      }
+      .left:hover {
+        background-color: rgb(167, 223, 57);
+        box-shadow: 0 0.8vh rgb(124, 167, 39);
+      }
+
+      .left:active {
+        background-color: yellowgreen;
+        box-shadow: 0 0.8vh rgb(124, 167, 39);
+        transform: translateY(4px);
+        -ms-transform: skewY(30deg);
+       
+      }
+      .right {
+        position: absolute;
+        top: 65vh;
+        left: 20vw;
+        height: 10vh;
+        width: 5vw;
+        color: #0D47A1;
+        background-color: teal;
+        box-shadow: 0 1vh #2ca8c7;
+        -ms-transform: skewY(30deg);
+        transform: skewY(30deg);
+      }
+      .right:hover {
+        background-color: rgb(167, 223, 57);
+        box-shadow: 0 0.8vh rgb(124, 167, 39);
+
+      }
+
+      .right:active {
+        background-color: yellowgreen;
+        box-shadow: 0 0.8vh rgb(124, 167, 39);
+        transform: translateY(4px);
+        -ms-transform: skewY(30deg);
+      }
+     .I button {
+        outline: none;
+        border: none;
+        font-size: 8vh;
+        position: absolute;
+        color: #35405e;
+        text-align: center;
+        border-radius: 0.3vw;
+      }
+
+      .play1:hover {
+        background-color: rgb(167, 223, 57);
+        box-shadow: 0 0.8vh rgb(124, 167, 39);
+      }
+
+      .play1:active {
+        box-shadow: 0 0.8vh rgb(124, 167, 39);
+        transform: translateY(4px);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <div class="i"> -->
+    <div class="rec"></div>
+    <div class="rec1"></div>
+    <div class="I">
+      <h1>Game Rules</h1>
+      <p>Beat Your opponent in 2 rounds out of 3 to win the match.</p>
+      <p>+10 pts for every round won.</p>
+      <p>-5 pts for every round lost.</p>
+      <p>0 pts for a draw round</p>
+      <p>Every match won will give you multiplier bonus!</p>
+      <button class="left"><i class="fa fa-angle-double-right"></i></button>
+      <button class="play1"><i class="fa fa-forward"></i></button>
+      <button class="right"><i class="fa fa-angle-double-left"></i></button>
+    </div>
+  </body>
+</html>
