@@ -78,7 +78,7 @@
     width: 65vw;
     height: 7vh;
     background-color: darkcyan;
-    position: fixed;
+    position: absolute;
 }
 
 .sound {
@@ -152,8 +152,8 @@ button {
     position: absolute;
     z-index: 9;
     top: 25vh;
-    width: 400px;
-    height: 400px;
+    width: 30vw;
+    height: 64vh;
     justify-content: center;
     align-items: center;
     display: flex;
