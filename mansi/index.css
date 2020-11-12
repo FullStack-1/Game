@@ -1,0 +1,158 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("img copy.jpeg");
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.rock {
+    height: 92vh;
+    width: 20vw;
+    border: none;
+    background-color: #13527c;
+    margin-top: 3vw;
+    float: left;
+    margin-right: 1vw;
+    margin-left: 19vw;
+}
+
+.paper {
+    height: 92vh;
+    width: 20vw;
+    border: none;
+    background-color: #00ACC1;
+    margin-top: 3vw;
+    float: left;
+    margin-right: 1vw;
+}
+
+.scissors {
+    height: 92vh;
+    width: 20vw;
+    border: none;
+    background-color: #e24e4e;
+    margin-top: 3vw;
+    float: left;
+    margin-right: 1vw;
+}
+
+button {
+    outline: none;
+    border: none;
+    font-size: 8vh;
+    position: absolute;
+    color: #35405e;
+    text-align: center;
+    border-radius: 0.3vw
+}
+
+.sound {
+    margin-top: 2vh;
+    height: 10vh;
+    width: 6vw;
+    box-shadow: 0 1vh #2ca8c7;
+    background-color: #17c0eb;
+    margin-left: 93vw;
+}
+
+.info {
+    margin-top: 2vh;
+    background-color: #17c0eb;
+    margin-left: 1.5vw;
+    height: 10vh;
+    width: 6vw;
+    box-shadow: 0 1vh #2ca8c7;
+}
+
+.fullscreen {
+    margin-top: 2vh;
+    height: 10vh;
+    width: 6vw;
+    box-shadow: 0 1vh #2ca8c7;
+    background-color: #17c0eb;
+    margin-left: 85vw;
+}
+
+.fullscreen:active {
+    box-shadow: 0 0.6vh #2ca8c7;
+    transform: translateY(4px);
+}
+
+.play {
+    margin-top: 10vh;
+    margin-left: -12vw;
+    height: 14vh;
+    width: 8vw;
+    color: rgb(64, 85, 22);
+    background-color: yellowgreen;
+    box-shadow: 0 1.5vh rgb(107, 145, 31);
+}
+
+.play:hover {
+    background-color: rgb(167, 223, 57);
+}
+
+.play:active {
+    background-color: yellowgreen;
+    box-shadow: 0 0.8vh rgb(124, 167, 39);
+    transform: translateY(4px);
+}
+
+.info:active {
+    box-shadow: 0 0.6vh #2ca8c7;
+    transform: translateY(4px);
+}
+
+.sound:active {
+    box-shadow: 0 0.6vh #2ca8c7;
+    transform: translateY(4px);
+}
+
+.hand-rock {
+    margin-left: 2vw;
+    margin-top: -34vh;
+    height: 80vh;
+    width: 15vw;
+}
+
+.hand-scissors {
+    margin-left: 2vw;
+    margin-top: -34vh;
+    height: 80vh;
+    width: 15vw;
+}
+
+.hand-paper {
+    margin-left: 2vw;
+    margin-top: -34vh;
+    height: 78vh;
+    width: 15vw;
+}
+
+.rock-banner {
+    margin-top: -25vh;
+    margin-left: 0.5vw;
+    height: 70vh;
+    width: 20vw;
+}
+
+.paper-banner {
+    margin-top: -35vh;
+    margin-left: -.8vw;
+    height: 82vh;
+    width: 22vw;
+}
+
+.scissors-banner {
+    margin-top: -25vh;
+    margin-left: 0.2vw;
+    height: 70vh;
+    width: 20vw;
+}

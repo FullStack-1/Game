@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="second.css">
+    <title>Game</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="index+second.js"></script>
+</head>
+
+<body>
+    <audio id="myAudio" autoplay controls loop style="display: none;">
+        <source src="audio.mp3" type="audio/mpeg">
+    </audio>
+
+    <div class="container1" style="display: none;">
+        <span></span>
+        <span></span>
+        <div class="content">
+            <p>Are you sure?</p>
+            <button class="chk" onclick="firstpage()"><i class="fa fa-check"></i></button>
+            <button class="cross1"><i class="fa fa-times"></i></button>
+        </div>
+    </div>
+    <div class="i" style="display: none;">
+        <div class="rec"></div>
+        <div class="rec1"></div>
+        <div class="I">
+            <h1>Game Rules</h1>
+            <p>Beat Your opponent in 2 rounds out of 3 to win the match.</p>
+            <p>+10 pts for every round won.</p>
+            <p>-5 pts for every round lost.</p>
+            <p>0 pts for a draw round</p>
+            <p>Every match won will give you multiplier bonus!</p>
+            <button class="left"><i class="fa fa-angle-double-right"></i></button>
+            <button class="play1"><i class="fa fa-forward"></i></button>
+            <button class="right"><i class="fa fa-angle-double-left"></i></button>
+        </div>
+    </div>
+    <div class="first body">
+        <header class="body">
+            <button class="info"><i class="fa fa-info"></i></button>
+            <button class="fullscreen fullscreen-off" onclick="closeFullscreen();" style="display: none;"><i class="fa fa-compress"></i></button>
+            <button class="fullscreen fullscreen-on" onclick="openFullscreen();"><i class="fa fa-expand"></i></button>
+            <button class="sound sound-off" style="display: none" onclick="document.getElementById('myAudio').play();"><i class="fa fa-volume-off"></i></button>
+            <button class="sound sound-on" onclick="document.getElementById('myAudio').pause();"><i class="fa fa-volume-up"></i></button>
+        </header>
+        <div class="rock">
+            <img class="rock-banner" src="index-rock-banner.png" alt="">
+            <img class="hand-rock" src="index-Rock.png">
+        </div>
+        <div class="paper">
+            <img class="paper-banner" src="index-paper-banner.png" alt="">
+            <img class="hand-paper" src="index-paper.png">
+            <button class="play" onclick="secondpage()"><i class="fa fa-play"></i></button>
+        </div>
+        <div class="scissors">
+            <img class="scissors-banner" src="index-scissors-banner.png" alt="">
+            <img class="hand-scissors" src="index-scissors.png">
+        </div>
+    </div>
+    <div class="second body" style="display: none;">
+        <header class="body">
+            <button class="info"><i class="fa fa-info"></i></button>
+            <button class="fullscreen fullscreen-off" onclick="closeFullscreen();" style="display: none;"><i class="fa fa-compress"></i></button>
+            <button class="fullscreen fullscreen-on" onclick="openFullscreen();"><i class="fa fa-expand"></i></button>
+            <button class="sound sound-off" style="display: none" onclick="document.getElementById('myAudio').play();"><i class="fa fa-volume-off"></i></button>
+            <button class="sound sound-on" onclick="document.getElementById('myAudio').pause();"><i class="fa fa-volume-up"></i></button>
+            <button class="cross"><i class="fa fa-times"></i></button>
+        </header>
+        <div class="container">
+            <img src="img copy.jpeg" alt="" />
+            <div class="sec">
+                <h2>Start to play</h2>
+                <div class="box1">
+                    <i class="fa fa-desktop act" aria-hidden="true"></i>
+                    <span class="head">vs</span>
+                    <i class="fa fa-user act1" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="box2"></div>
+        </div>
+    </div>
+</body>
+
+</html>

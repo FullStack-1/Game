@@ -1,9 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: 0;
-}
-
 .container {
     width: 100%;
     display: flex;
@@ -81,7 +75,7 @@
     position: absolute;
 }
 
-.sound {
+.second .sound {
     margin-top: 5vh;
     height: 9vh;
     width: 5vw;
@@ -90,7 +84,7 @@
     margin-left: 88vw;
 }
 
-.fullscreen {
+.second .fullscreen {
     margin-top: 5vh;
     height: 9vh;
     width: 5vw;
@@ -99,21 +93,7 @@
     margin-left: 82vw;
 }
 
-.fullscreen:active {
-    box-shadow: 0 0.6vh #2ca8c7;
-    transform: translateY(4px);
-}
-
-.info {
-    margin-top: 5vh;
-    background-color: #17c0eb;
-    margin-left: 2vw;
-    height: 9vh;
-    width: 5vw;
-    box-shadow: 0 1vh #2ca8c7;
-}
-
-.info:active {
+.second .fullscreen:active {
     box-shadow: 0 0.6vh #2ca8c7;
     transform: translateY(4px);
 }
@@ -123,7 +103,7 @@
     transform: translateY(4px);
 }
 
-.cross {
+.second .cross {
     margin-top: 5vh;
     background-color: #17c0eb;
     margin-left: 94vw;
@@ -132,12 +112,12 @@
     box-shadow: 0 1vh #2ca8c7;
 }
 
-.cross:active {
+.second .cross:active {
     box-shadow: 0 0.6vh #2ca8c7;
     transform: translateY(4px);
 }
 
-button {
+.second button {
     outline: none;
     border: none;
     font-size: 6vh;
@@ -238,37 +218,47 @@ button {
     float: right;
 }
 
+.info {
+    margin-top: 5vh;
+    background-color: #17c0eb;
+    margin-left: 2vw;
+    height: 9vh;
+    width: 5vw;
+    box-shadow: 0 1vh #2ca8c7;
+}
+
+.info:active {
+    box-shadow: 0 0.6vh #2ca8c7;
+    transform: translateY(4px);
+}
+
 .sound:active {
     box-shadow: 0 0.6vh #2ca8c7;
-    transform: translateY(.4em);
+    transform: translateY(4px);
 }
 
 .cross:active {
     box-shadow: 0 0.6vh #2ca8c7;
-    transform: translateY(0.4em);
+    transform: translateY(4px);
 }
 
 .blur {
-    filter: blur(0.5em)
-}
-
-.noblur {
-    filter: blur(0em)
+    filter: blur(4px)
 }
 
 .chk:active {
     box-shadow: 0 0.9vh #a12821;
-    transform: translateY(0.4em);
+    transform: translateY(4px);
 }
 
 .cross1:active {
     box-shadow: 0 0.9vh rgb(7, 68, 7);
-    transform: translateY(0.4em);
+    transform: translateY(4px);
 }
 
 .box1:active {
     box-shadow: 0 0.6vh #2ca8c7;
-    transform: translateY(0.4em);
+    transform: translateY(4px);
 }
 
 i {
