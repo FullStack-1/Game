@@ -78,8 +78,7 @@
     width: 65vw;
     height: 7vh;
     background-color: darkcyan;
-    position: absolute;
-    /* margin-right: 7vw; */
+    position: fixed;
 }
 
 .sound {
