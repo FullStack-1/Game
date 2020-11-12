@@ -210,10 +210,10 @@ button {
 }
 
 .content button {
-    font-size: 40px;
-    height: 50px;
-    width: 50px;
-    margin: 10px;
+    font-size: 6.4;
+    height: 8vh;
+    width: 3.6vw;
+    margin: 0.5em;
 }
 
 .chk {
@@ -240,38 +240,38 @@ button {
 
 .info:active {
     box-shadow: 0 0.6vh #2ca8c7;
-    transform: translateY(4px);
+    transform: translateY(0.4em);
 }
 
 .sound:active {
     box-shadow: 0 0.6vh #2ca8c7;
-    transform: translateY(4px);
+    transform: translateY(.4em);
 }
 
 .cross:active {
     box-shadow: 0 0.6vh #2ca8c7;
-    transform: translateY(4px);
+    transform: translateY(0.4em);
 }
 
 .blur {
-    filter: blur(5px)
+    filter: blur(0.5em)
 }
 
 .noblur {
-    filter: blur(0px)
+    filter: blur(0em)
 }
 
 .chk:active {
     box-shadow: 0 0.9vh #a12821;
-    transform: translateY(4px);
+    transform: translateY(0.4em);
 }
 
 .cross1:active {
     box-shadow: 0 0.9vh rgb(7, 68, 7);
-    transform: translateY(4px);
+    transform: translateY(0.4em);
 }
 
 .box1:active {
     box-shadow: 0 0.6vh #2ca8c7;
-    transform: translateY(4px);
+    transform: translateY(0.4em);
 }
