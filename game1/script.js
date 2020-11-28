@@ -10,48 +10,71 @@ function random() {
     return i;
 }
 
-function totalRound() {
-    total_round = total_round + 1;
-    if (total_round == 3) {
-        alert(computer);
-    } else {
-        alert("player", player);
-    }
+function image(i) {
+
+    $('.default_left').css('display', 'none');
+
+    if (x == 0)
+        $('.rock-player').css('display', 'block');
+    else if (x == 1)
+
+        $('.paper-player').css('display', 'block');
+    else if (x == 2)
+        $('.scissors-player').css('display', 'block');
 }
 
-function winner() {
-    $('.block1').css('background-color', 'black');
-    if ($('.block1').css('background-color', 'black')) {
-        $('.block2').css('background-color', 'black');
-    }
-    if ($('.block2').css('background-color', 'black')) {
-        $('.block3').css('background-color', 'black');
-    }
+function animation(i) {
+
+    $(".default_left").effect("shake", { direction: "up", times: 6, distance: 10 }, 1000);
+    $(".default_right").effect("shake", { direction: "up", times: 6, distance: 10 }, 1000);
+    setTimeout(image, 1090);
+
 }
+
+
 
 function default_img() {
-    $('h2').css('display', 'none');
-    $('button').css('display', 'none');
+    $('h2').css('display', 'block');
+    $('.heading').css('display', 'none');
+    $('.box button').css('display', 'none');
     $('.default_left').css('display', 'block');
-    $('span').css('display', 'block');
+
     $('.default_right').css('display', 'block');
 }
 
+function cpu_rock() {
+    $('.default_right').css('display', 'none');
+    $('.rock-cpu').css('display', 'block');
+}
+
+function cpu_paper() {
+    $('.default_right').css('display', 'none');
+    $('.paper-cpu').css('display', 'block');
+}
+
+function cpu_scissors() {
+    $('.default_right').css('display', 'none');
+    $('.scissors-cpu').css('display', 'block');
+}
 $(document).ready(function() {
     $('.zero').click(function() {
         var i = random();
         x = 0;
         default_img();
+        animation(i);
+
         if (i == 0) {
             $("#text").text("draw as computer also selects rock");
-            computer = computer + 1;
-            player = player + 1;
+            setTimeout(cpu_rock, 1090);
+
         } else if (i == 1) {
             $("#text").text("Computer win as computer selects paper");
+            setTimeout(cpu_paper, 1090);
             computer = computer + 1;
 
         } else if (i == 2) {
             $("#text").text("USER win as computer selects scissor");
+            setTimeout(cpu_scissors, 1090);
             player = player + 1;
             winner();
         }
@@ -60,15 +83,18 @@ $(document).ready(function() {
         var i = random();
         x = 1;
         default_img();
+        animation(image);
         if (i == 1) {
             $("#text").text("draw as computer also selects paper");
-            computer = computer + 1;
-            player = player + 1;
+            setTimeout(cpu_paper, 1090);
+
         } else if (i == 0) {
             $("#text").text("USER win as computer selects rock");
+            setTimeout(cpu_rock, 1090);
             player = player + 1;
         } else if (i == 2) {
             $("#text").text("Computer win as computer selects scissor");
+            setTimeout(cpu_scissors, 1090);
             computer = computer + 1;
         }
 
@@ -77,99 +103,27 @@ $(document).ready(function() {
         var i = random();
         x = 2;
         default_img();
+        animation(image);
         if (i == 2) {
             $("#text").text("draw as computer also selects scissor");
-            computer = computer + 1;
-            player = player + 1;
+            setTimeout(cpu_scissors, 1090);
+
         } else if (i == 1) {
             $("#text").text("USER win as computer selects paper");
+            setTimeout(cpu_paper, 1090);
             player = player + 1;
         } else if (i == 0) {
             $("#text").text("Computer win as computer selects rock");
+            setTimeout(cpu_rock, 1090);
             computer = computer + 1;
         }
     });
 });
-var total_round = 0;
-var computer = 0;
-var player = 0;
-
-function random() {
-    var choices = ["rock", "paper", "scissor"];
-    var i = Math.floor(Math.random() * 3);
-    var comp = choices[i];
-    var x = 0;
-    return i;
-}
-function totalRound() {
-    total_round = total_round + 1;
-    if (total_round == 3) {
-        alert(computer);
-    } else {
-        alert("player", player);
-    }
-}
-function default_img() {
-
-    $('h2').css('display', 'none');
-    $('button').css('display', 'none');
-    $('.default_left').css('display', 'block');
-    $('span').css('display', 'block');
-    $('.default_right').css('display', 'block');
-}
-
-$(document).ready(function() {
-    $('.zero').click(function() {
-        var i = random();
-        x = 0;
-        default_img();
-        if (i == 0) {
-            $("#text").text("draw as computer also selects rock");
-            computer = computer + 1;
-            player = player + 1;
-        } else if (i == 1) {
-            $("#text").text("Computer win as computer selects paper");
-            computer = computer + 1;
-        } else if (i == 2) {
-            $("#text").text("USER win as computer selects scissor");
-            player = player + 1;
-        }
-
-    });
-    $('.one').click(function() {;
-        var i = random();
-        x = 1;
-        default_img();
-        if (i == 1) {
-            $("#text").text("draw as computer also selects paper");
-            computer = computer + 1;
-            player = player + 1;
-        } else if (i == 0) {
-            $("#text").text("USER win as computer selects rock");
-            player = player + 1;
-            winner();
-        } else if (i == 2) {
-            $("#text").text("Computer win as computer selects scissor");
-            computer = computer + 1;
-        }
-
-    });
-    $('.two').click(function() {;
-        var i = random();
-        x = 2;
-        default_img();
-        if (i == 2) {
-            $("#text").text("draw as computer also selects scissor");
-            computer = computer + 1;
-            player = player + 1;
-        } else if (i == 1) {
-            $("#text").text("USER win as computer selects paper");
-            player = player + 1;
-            winner();
-        } else if (i == 0) {
-            $("#text").text("Computer win as computer selects rock");
-            computer = computer + 1;
-        }
-    });
-
-});
+// function totalRound() {
+//     total_round = total_round + 1;
+//     if (total_round == 3) {
+//         alert(computer);
+//     } else {
+//         alert("player", player);
+//     }
+// }

@@ -1,13 +1,63 @@
 * {
     padding: 0;
-    border: none;
-    outline: none;
     margin: 0;
     box-sizing: border-box;
 }
 
+header .sound {
+    margin-top: 5vh;
+    height: 9vh;
+    width: 5vw;
+    box-shadow: 0 1vh #2ca8c7;
+    background-color: #17c0eb;
+    margin-left: 88vw;
+}
+
+header .fullscreen {
+    margin-top: 5vh;
+    height: 9vh;
+    width: 5vw;
+    box-shadow: 0 1vh #2ca8c7;
+    background-color: #17c0eb;
+    margin-left: 82vw;
+}
+
+header .fullscreen:active {
+    box-shadow: 0 0.6vh #2ca8c7;
+    transform: translateY(4px);
+}
+
+.sound:active {
+    box-shadow: 0 0.6vh #2ca8c7;
+    transform: translateY(4px);
+}
+
+header .cross {
+    margin-top: 5vh;
+    background-color: #17c0eb;
+    margin-left: 94vw;
+    height: 9vh;
+    width: 5vw;
+    box-shadow: 0 1vh #2ca8c7;
+}
+
+header .cross:active {
+    box-shadow: 0 0.6vh #2ca8c7;
+    transform: translateY(4px);
+}
+
+header button {
+    outline: none;
+    border: none;
+    font-size: 6vh;
+    position: absolute;
+    color: #35405e;
+    float: right;
+    border-radius: 0.3vw;
+}
+
 body {
-    background-image: url("../img copy.jpeg");
+    background-image: url("img copy.jpeg");
     height: 100%;
     background-repeat: no-repeat;
     background-position: center;
@@ -15,21 +65,13 @@ body {
 }
 
 .box {
-    margin: 2rem auto;
-    width: 55rem;
-    height: 15rem;
+    margin: 5rem auto;
+    width: 40rem;
+    height: 11rem;
     background-image: linear-gradient(65deg, #091a46 50%, #182C61 50%);
     border: none;
     box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem grey;
     border-radius: 8px;
-}
-
-.container .message {
-    width: 80%;
-    height: 30px;
-    box-shadow: 2px 2px 2px 2px grey;
-    background-color: chocolate;
-    top: 0;
 }
 
 .box button {
@@ -53,59 +95,6 @@ body {
     color: whitesmoke;
 }
 
-.results-container {
-    width: 35rem;
-    height: 250px;
-    margin: 0 auto;
-}
-
-.results-container .user {
-    height: 10rem;
-    width: 10rem;
-    background-color: rgb(12, 51, 124);
-    box-shadow: 1px 10px 5px 1px rgb(39, 39, 39);
-    float: left;
-    margin-left: 20px;
-}
-
-.results-container .result {
-    height: 8rem;
-    width: 8rem;
-    background-color: rgb(131, 58, 82);
-    box-shadow: 1px 10px 5px 1px rgb(39, 39, 39);
-    float: left;
-    margin-top: 21px;
-    margin-left: 27px;
-}
-
-.results-container .comp {
-    height: 10rem;
-    width: 10rem;
-    background-color: rgb(128, 18, 18);
-    box-shadow: 1px 10px 5px 1px rgb(39, 39, 39);
-    float: left;
-    margin-left: 28px;
-}
-
-.default_left {
-    width: 20rem;
-    height: 10rem;
-    padding-top: 2rem;
-    padding-left: 1rem;
-    float: left;
-    position: relative;
-}
-
-.default_right {
-    width: 20rem;
-    position: relative;
-    height: 10rem;
-    padding-top: 2rem;
-    padding-right: 1rem;
-    /* left: 15rem; */
-    float: right;
-}
-
 .box span {
     top: 5rem;
     font-size: 5rem;
@@ -114,15 +103,21 @@ body {
     text-shadow: 3px 0px 5px rgb(24, 23, 23);
 }
 
-.user {
-    padding-left: 1vw;
+.left-img {
+    width: 20rem;
+    height: 10rem;
+    padding-top: 2rem;
+    padding-left: 1rem;
+    float: left;
+    position: relative;
 }
 
-.user div {
-    height: 2rem;
-    width: 2rem;
-    margin: 1rem 0.3rem;
-    display: inline-block;
-    border-radius: 50%;
-    background-color: rgb(204, 202, 202);
+.right-img {
+    width: 20rem;
+    position: relative;
+    height: 10rem;
+    padding-top: 2rem;
+    padding-right: 1rem;
+    /* left: 15rem; */
+    float: right;
 }

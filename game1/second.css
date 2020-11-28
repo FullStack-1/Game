@@ -397,3 +397,7 @@ i {
     box-shadow: 0 0.8vh rgb(124, 167, 39);
     transform: translateY(4px);
 }
+
+header button:hover {
+    transform: scale(0.9)
+}
