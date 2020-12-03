@@ -118,7 +118,9 @@ $(document).ready(function() {
             computer = computer + 1;
         }
     });
+
 });
+
 // function totalRound() {
 //     total_round = total_round + 1;
 //     if (total_round == 3) {
