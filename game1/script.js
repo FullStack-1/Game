@@ -120,7 +120,43 @@ $(document).ready(function() {
     });
 
 });
+// var CheckScreenOrientation = pc.createScript('checkScreenOrientation');
 
+// CheckScreenOrientation.prototype.initialize = function() {
+//     this.paused = false;
+        
+//     this.app.graphicsDevice.on('resizecanvas', function(width, height) {
+//         calculateDimensions(width, height);
+//     });
+    
+//     function calculateDimensions(w, h){   
+//     w = window.innerWidth;
+//     h = window.innerHeight;
+
+//     if(w > h){
+//         console.log("Landscape");
+//         togglePaused (false);
+//     }
+//     else if (w === h){
+//         console.log("square");
+//         togglePaused (true);
+//     }
+//     else{
+//         console.log("Portrait");
+//         togglePaused (true);
+//     }
+//     }    
+    
+//     function togglePaused(shouldPause){
+//         if (shouldPause === false) {
+//             this.pc.app.timeScale = 1;
+//             console.log("Resume Game");
+//         } else {
+//             this.pc.app.timeScale = 0;
+//             console.log("Pause Game");
+//         }
+//     }
+// };
 // function totalRound() {
 //     total_round = total_round + 1;
 //     if (total_round == 3) {
