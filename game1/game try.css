@@ -242,7 +242,6 @@ header button {
     font-size: 5vh;
 }
 
-
 .cross:active {
     box-shadow: 0 0.6vh #2ca8c7;
     transform: translateY(4px);
@@ -267,7 +266,6 @@ i {
     align-items: center;
     display: flex;
     text-align: center;
-
 }
 
 .I {

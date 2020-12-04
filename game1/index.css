@@ -12,7 +12,7 @@ body {
     background-size: cover;
 }
 
-.rock {
+.first .rock {
     height: 92vh;
     width: 20vw;
     border: none;
@@ -23,7 +23,7 @@ body {
     margin-left: 19vw;
 }
 
-.paper {
+.first .paper {
     height: 92vh;
     width: 20vw;
     border: none;
@@ -33,7 +33,7 @@ body {
     margin-right: 1vw;
 }
 
-.scissors {
+.first .scissors {
     height: 92vh;
     width: 20vw;
     border: none;
@@ -43,7 +43,7 @@ body {
     margin-right: 1vw;
 }
 
-button {
+.first button {
     outline: none;
     border: none;
     font-size: 8vh;
@@ -53,7 +53,7 @@ button {
     border-radius: 0.3vw
 }
 
-.sound {
+.first .sound {
     margin-top: 2vh;
     height: 10vh;
     width: 6vw;
@@ -62,7 +62,7 @@ button {
     margin-left: 93vw;
 }
 
-.info {
+.first .info {
     margin-top: 2vh;
     background-color: #17c0eb;
     margin-left: 1.5vw;
@@ -71,7 +71,7 @@ button {
     box-shadow: 0 1vh #2ca8c7;
 }
 
-.fullscreen {
+.first .fullscreen {
     margin-top: 2vh;
     height: 10vh;
     width: 6vw;
@@ -80,13 +80,13 @@ button {
     margin-left: 85vw;
 }
 
-.fullscreen:active {
+.first .fullscreen:active {
     box-shadow: 0 0.6vh #2ca8c7;
     transform: translateY(4px);
 }
 
-.play {
-    margin-top: 10vh;
+.first .play {
+    margin-top: 40vh;
     margin-left: -12vw;
     height: 14vh;
     width: 8vw;
@@ -95,62 +95,62 @@ button {
     box-shadow: 0 1.5vh rgb(107, 145, 31);
 }
 
-.play:hover {
+.first .play:hover {
     background-color: rgb(167, 223, 57);
 }
 
-.play:active {
+.first .play:active {
     background-color: yellowgreen;
     box-shadow: 0 0.8vh rgb(124, 167, 39);
     transform: translateY(4px);
 }
 
-.info:active {
+.first .info:active {
     box-shadow: 0 0.6vh #2ca8c7;
     transform: translateY(4px);
 }
 
-.sound:active {
+.first .sound:active {
     box-shadow: 0 0.6vh #2ca8c7;
     transform: translateY(4px);
 }
 
-.hand-rock {
+.first .hand-rock {
     margin-left: 2vw;
-    margin-top: -34vh;
+    margin-top: -3.5vh;
     height: 80vh;
     width: 15vw;
 }
 
-.hand-scissors {
+.first .hand-scissors {
     margin-left: 2vw;
-    margin-top: -34vh;
+    margin-top: -2.8vh;
     height: 80vh;
     width: 15vw;
 }
 
-.hand-paper {
+.first .hand-paper {
     margin-left: 2vw;
-    margin-top: -34vh;
+    margin-top: -1.5vh;
     height: 78vh;
     width: 15vw;
 }
 
-.rock-banner {
+.first .rock-banner {
     margin-top: -25vh;
     margin-left: 0.5vw;
     height: 70vh;
     width: 20vw;
 }
 
-.paper-banner {
+.first .paper-banner {
     margin-top: -35vh;
     margin-left: -.8vw;
     height: 82vh;
     width: 22vw;
 }
 
-.scissors-banner {
+.first .scissors-banner {
     margin-top: -25vh;
     margin-left: 0.2vw;
     height: 70vh;

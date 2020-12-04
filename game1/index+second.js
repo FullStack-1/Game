@@ -37,17 +37,25 @@ function closeFullscreen() {
     }
 }
 
+function third_page() {
+    $(".third").css("display", "block");
+    $(".second").css("display", "none");
+
+}
+
 function secondpage() {
     $(".second").css("display", "block");
     $(".first").css("display", "none");
 
 }
 
+
 function firstpage() {
     $(".first").css("display", "block");
     $(".second").css("display", "none");
     $(".container1").css("display", "none");
     $(".body").toggleClass("blur");
+    $('.third').css("display", "none");
 }
 
 $(document).ready(function() {

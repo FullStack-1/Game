@@ -1,4 +1,4 @@
-.container {
+.second .container {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -8,7 +8,7 @@
     /* position: relative; */
 }
 
-.container img {
+.second .container img {
     width: 100vw;
     height: 100vh;
     display: block;
@@ -17,7 +17,7 @@
     /* position: relative; */
 }
 
-.sec {
+.second .sec {
     width: 60vw;
     height: 35vh;
     background-color: whitesmoke;
@@ -29,31 +29,31 @@
     /* margin-right: 8vw; */
 }
 
-.sec h2 {
+.second .sec h2 {
     text-align: center;
     vertical-align: middle;
     line-height: 15vh;
-    color: yellow;
+    color: white;
     font-weight: bold;
     font-size: 8vh;
     font-family: cursive;
 }
 
-.box1 {
-    width: 17vw;
+.second .box1 {
+    width: 20vw;
     height: 11vh;
     background-color: #17c0eb;
     position: absolute;
     right: 22vw;
     top: 18vh;
-    box-shadow: 0 1vh #2ca8c7;
+    box-shadow: 0 1.5vh #2ca8c7;
     border-radius: 0.3vw;
     font-size: 8vh;
     line-height: 12vh;
     color: #35405e;
 }
 
-.act {
+.second .act {
     display: inline-block;
     text-align: center;
     justify-content: center;
@@ -61,14 +61,14 @@
     margin-left: 2.5vw;
 }
 
-.act1 {
+.second .act1 {
     display: inline-block;
     text-align: center;
     justify-content: center;
     vertical-align: baseline;
 }
 
-.box2 {
+.second .box2 {
     width: 65vw;
     height: 7vh;
     background-color: darkcyan;
@@ -127,7 +127,7 @@
     border-radius: 0.3vw;
 }
 
-.container1 {
+.second .container1 {
     margin: 0 auto;
     position: absolute;
     z-index: 9;
@@ -141,7 +141,7 @@
     left: 35vw;
 }
 
-.container1 span:nth-child(1) {
+.second .container1 span:nth-child(1) {
     position: absolute;
     top: 0;
     left: 0;
@@ -154,11 +154,11 @@
     animation: animate 4s linear infinite;
 }
 
-.container1 :hover span:nth-child(1) {
+.second .container1 :hover span:nth-child(1) {
     border: none;
 }
 
-.container1 span:nth-child(2) {
+.second .container1 span:nth-child(2) {
     position: absolute;
     top: 0;
     left: 0;
@@ -179,24 +179,24 @@
     }
 }
 
-.content {
+.second .content {
     position: relative;
 }
 
-.content p {
+.second .content p {
     font-family: 'Architects Daughter', cursive;
     font-weight: 1000;
     font-size: 8vh;
 }
 
-.content button {
+.second .content button {
     font-size: 6.4;
     height: 8vh;
     width: 3.6vw;
     margin: 0.5em;
 }
 
-.chk {
+.second .chk {
     background-color: #cc322a;
     color: #7e2317;
     border: none;
@@ -207,7 +207,7 @@
     float: left;
 }
 
-.cross1 {
+.second .cross1 {
     background-color: rgb(9, 90, 9);
     color: green;
     box-shadow: 0 1.5vh rgb(7, 68, 7);
@@ -227,48 +227,48 @@
     box-shadow: 0 1vh #2ca8c7;
 }
 
-.info:active {
+.second .info:active {
     box-shadow: 0 0.6vh #2ca8c7;
     transform: translateY(4px);
 }
 
-.sound:active {
+.second .sound:active {
     box-shadow: 0 0.6vh #2ca8c7;
     transform: translateY(4px);
 }
 
-.cross:active {
+.second .cross:active {
     box-shadow: 0 0.6vh #2ca8c7;
     transform: translateY(4px);
 }
 
-.blur {
+.second .blur {
     filter: blur(4px)
 }
 
-.chk:active {
+.second .chk:active {
     box-shadow: 0 0.9vh #a12821;
     transform: translateY(4px);
 }
 
-.cross1:active {
+.second .cross1:active {
     box-shadow: 0 0.9vh rgb(7, 68, 7);
     transform: translateY(4px);
 }
 
-.box1:active {
+.second .box1:active {
     box-shadow: 0 0.6vh #2ca8c7;
     transform: translateY(4px);
 }
 
-i {
+.second i {
     justify-content: center;
     align-items: center;
     display: flex;
     text-align: center;
 }
 
-.I {
+.second .I {
     width: 55vw;
     height: 65vh;
     background-image: linear-gradient(45deg, #dfca65, #f6e58d, #f6e58d, #e4d27b, #f0d862);
@@ -278,7 +278,7 @@ i {
     left: 25vw;
 }
 
-.I h1 {
+.second .I h1 {
     text-align: center;
     font-family: cursive;
     font-size: 4vw;
@@ -286,7 +286,7 @@ i {
     padding-top: 4vh;
 }
 
-.I p {
+.second .I p {
     font-family: cursive;
     font-size: 2vw;
     color: #d50000;
@@ -294,7 +294,7 @@ i {
     line-height: 5vh;
 }
 
-.rec {
+.second .rec {
     height: 20vh;
     width: 4vw;
     background-image: linear-gradient(to bottom, gold, cyan);
@@ -305,7 +305,7 @@ i {
     left: 32vw;
 }
 
-.rec1 {
+.second .rec1 {
     height: 20vh;
     width: 4vw;
     background-image: linear-gradient(to bottom, gold, cyan);
@@ -316,7 +316,7 @@ i {
     right: 28vw;
 }
 
-.play1 {
+.second .play1 {
     position: absolute;
     top: 60vh;
     left: 25vw;
@@ -327,7 +327,7 @@ i {
     box-shadow: 0 1vh #2ca8c7;
 }
 
-.left {
+.second .left {
     position: absolute;
     top: 60vh;
     right: -2vw;
@@ -341,19 +341,19 @@ i {
     transform: skewY(30deg);
 }
 
-.left:hover {
+.second .left:hover {
     background-color: rgb(167, 223, 57);
     box-shadow: 0 0.8vh rgb(124, 167, 39);
 }
 
-.left:active {
+.second .left:active {
     background-color: yellowgreen;
     box-shadow: 0 0.8vh rgb(124, 167, 39);
     transform: translateY(4px);
     -ms-transform: skewY(30deg);
 }
 
-.right {
+.second .right {
     position: absolute;
     top: 60vh;
     left: -2vw;
@@ -366,19 +366,19 @@ i {
     transform: skewY(30deg);
 }
 
-.right:hover {
+.second .right:hover {
     background-color: rgb(167, 223, 57);
     box-shadow: 0 0.8vh rgb(124, 167, 39);
 }
 
-.right:active {
+.second .right:active {
     background-color: yellowgreen;
     box-shadow: 0 0.8vh rgb(124, 167, 39);
     transform: translateY(4px);
     -ms-transform: skewY(30deg);
 }
 
-.I button {
+.second .I button {
     outline: none;
     border: none;
     font-size: 8vh;
@@ -388,16 +388,16 @@ i {
     border-radius: 0.3vw;
 }
 
-.play1:hover {
+.second .play1:hover {
     background-color: rgb(167, 223, 57);
     box-shadow: 0 0.8vh rgb(124, 167, 39);
 }
 
-.play1:active {
+.second .play1:active {
     box-shadow: 0 0.8vh rgb(124, 167, 39);
     transform: translateY(4px);
 }
 
-header button:hover {
+.second header button:hover {
     transform: scale(0.9)
 }
