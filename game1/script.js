@@ -76,7 +76,8 @@ function animation() {
 }
 
 function timeout() {
-    $('.box img').css('display', 'none');
+    $('.left-img').css('display', 'none');
+    $('.right-img').css('display', 'none');
     $('.vs').css('display', 'none');
     $('.button').css('display', 'block');
     $('.heading').css('display', 'block');

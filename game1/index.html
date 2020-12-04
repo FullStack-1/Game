@@ -183,7 +183,7 @@
             <img class="hand-scissors" src="index-scissors.png">
         </div>
     </div>
-    <div class="second body">
+    <div class="second body" style="display: none;">
         <header class="body">
             <button class="info" onclick="document.getElementById('myAudio1').play();"><i class="fa fa-info"></i></button>
             <button class="fullscreen fullscreen-off" onclick="closeFullscreen(); document.getElementById('myAudio1').play();" style="display: none;"><i class="fa fa-compress"></i></button>
@@ -226,19 +226,25 @@
             <i class="fa fa-times"></i>
           </button>
         </header>
+
         <button id="reset" onclick="reset_all()"><h1>Reset</h1></button>
         <div class="main_container">
             <div class="box">
                 <h2 class="heading">Your Turn</h2>
                 <div class="button">
                     <button id="button" class="zero" onclick="document.getElementById('myAudio2').play();">
-                <i class="fa fa-hand-rock-o"></i>
+                <!-- <i class="fa fa-hand-rock-o"></i> -->
+                <img src="https://img.icons8.com/color/48/000000/hand-rock.png"/>
+                
+                
               </button>
                     <button id="button" class="one" onclick="document.getElementById('myAudio2').play();">
-                <i class="fa fa-hand-paper-o"></i>
+                <!-- <i class="fa fa-hand-paper-o"></i> -->
+                <img src="https://img.icons8.com/color/48/000000/hand.png"/>
               </button>
                     <button id="button" class="two" onclick="document.getElementById('myAudio2').play();">
-                <i class="fa fa-hand-scissors-o"></i>
+                <!-- <i class="fa fa-hand-scissors-o"></i> -->
+                <img src="https://img.icons8.com/color/48/000000/hand-peace--v2.png"/>
               </button>
                 </div>
                 <img src="https://algebra2.thinkport.org/module6/images/task-8/rock-you.png" class="left-img default_left rock-player" style="display: none;">
