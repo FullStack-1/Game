@@ -72,10 +72,60 @@
         .first img {
             margin-top: 1vw;
         }
+
+        @media (orientation: portrait) {
+            
+            .container1 {
+                display: none;
+            }
+            .i {
+                display: none;
+            }
+            .first body{
+                display: none;
+            }
+            .second body{
+                display: none;
+            }
+            .container {
+                display: none;
+            }
+            .body{
+                display: none;
+            }
+            .result{
+                display: none;
+            }
+            body,
+            html {
+                background-image: none;
+                background-color: black;
+            }
+            button {
+                display: none;
+            }
+           
+        }
+        
+        @media (orientation: landscape) {
+            body {
+                display: block;
+            }
+        }
     </style>
 </head>
 
 <body>
+    <script>
+        window.addEventListener("orientationchange", function() {
+            if (window.orientation == 90 || window.orientation == -90) {
+                body.resume(); // landscape mode
+
+            } else {
+                body.pause(); // portrait mode
+            }
+        });
+    </script>
     <audio id="myAudio" autoplay controls loop style="display: none;">
         <source src="audio.mp3" type="audio/mpeg">
     </audio>
