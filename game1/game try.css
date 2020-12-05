@@ -15,15 +15,6 @@ h2 {
     box-sizing: border-box;
 }
 
-body,
-html {
-    background-image: url("img copy.jpeg");
-    height: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
 header {
     position: fixed;
 }
@@ -32,9 +23,10 @@ header .sound {
     margin-top: 5vh;
     height: 9vh;
     width: 5vw;
-    box-shadow: 0 1vh #2ca8c7;
-    background-color: #17c0eb;
+    box-shadow: 0 1vh #e1b12c;
+    background-color: #fbc531;
     margin-left: 88vw;
+    color: #9b791b
 }
 
 header .fullscreen {
@@ -52,21 +44,22 @@ header .fullscreen:active {
 }
 
 .sound:active {
-    box-shadow: 0 0.6vh #2ca8c7;
+    box-shadow: 0 0.6vh #9b791b;
     transform: translateY(4px);
 }
 
 header .cross {
     margin-top: 5vh;
-    background-color: #17c0eb;
+    background-color: #cc322a;
     margin-left: 94vw;
     height: 9vh;
     width: 5vw;
-    box-shadow: 0 1vh #2ca8c7;
+    box-shadow: 0 1.5vh #a12821;
+    color: #7e2317;
 }
 
 header .cross:active {
-    box-shadow: 0 0.6vh #2ca8c7;
+    box-shadow: 0 0.6vh #a12821;
     transform: translateY(4px);
 }
 
@@ -82,15 +75,16 @@ header button {
 
 .info {
     margin-top: 5vh;
-    background-color: #17c0eb;
+    background-color: #636e72;
     margin-left: 2vw;
     height: 9vh;
     width: 5vw;
-    box-shadow: 0 1vh #2ca8c7;
+    box-shadow: 0 1vh #2d3436;
+    color: #2d3436
 }
 
 .info:active {
-    box-shadow: 0 0.6vh #2ca8c7;
+    box-shadow: 0 0.6vh #2d3436;
     transform: translateY(4px);
 }
 
@@ -119,6 +113,7 @@ header button {
 }
 
 .heading {
+    padding: 0.8vh;
     font-size: 5vh;
     text-align: center;
     color: blanchedalmond
@@ -399,8 +394,8 @@ h2 {
 .main_container h1 {
     display: none;
     text-align: center;
-    font-size: 3em;
-    margin-top: 1vh;
+    font-size: 20vh;
+    padding: 3vh;
     color: white;
     text-shadow: 0 0.1em rgba(0, 0, 0, 1), 0.05em -0.03em 0 rgba(0, 0, 0, 1), 0.05em 0.005em 0 rgba(0, 0, 0, 1), 0em 0.08em 0 rgba(0, 0, 0, 1), 0.05em 0.08em 0 rgba(0, 0, 0, 1), 0px -0.03em 0 rgba(0, 0, 0, 1), -0.03em -0.03em 0 rgba(0, 0, 0, 1), -0.03em 0.08em 0 rgba(0, 0, 0, 1), -0.03em 0 0 rgba(0, 0, 0, 1);
 }
@@ -487,4 +482,9 @@ h4 {
     height: 10vh;
     width: 10vh;
     margin-top: 2vh
+}
+
+button:hover {
+    transform: scale(1.2);
+    transition: ease-in 200ms;
 }

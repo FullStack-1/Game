@@ -4,43 +4,86 @@
     box-sizing: border-box;
 }
 
-body {
-    background-image: url("img copy.jpeg");
-    height: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
 .first .rock {
     height: 92vh;
     width: 20vw;
     border: none;
-    background-color: #13527c;
+    background-image: linear-gradient(-65deg, #d6e0a9 50%, #a1a880 50%);
     margin-top: 3vw;
     float: left;
     margin-right: 1vw;
     margin-left: 19vw;
 }
 
+.first p {
+    text-align: center;
+}
+
+.first .rock p {
+    transform: rotate(-360deg);
+    transform: scale(0.5);
+    font-size: 12vh;
+    animation: scissors 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) backwards infinite alternate;
+    color: #d6e0a9;
+    text-shadow: 0 0.1em #707557, 0.05em -0.03em 0 #707557;
+}
+
 .first .paper {
     height: 92vh;
     width: 20vw;
     border: none;
-    background-color: #00ACC1;
     margin-top: 3vw;
     float: left;
     margin-right: 1vw;
+    background-image: linear-gradient(-65deg, #247BA0 50%, #124f69 50%);
+}
+
+.first .paper p {
+    transform: scale(0.9);
+    color: #247BA0;
+    font-size: 12vh;
+    animation: paper 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) backwards infinite alternate;
+    text-shadow: 0 0.1em #0c3547, 0.05em -0.03em 0 #124f69;
+}
+
+@keyframes paper {
+    0% {
+        transform: scale(1.1);
+    }
+    90%,
+    100% {
+        transform: scale(1) rotateZ(0deg);
+    }
 }
 
 .first .scissors {
     height: 92vh;
     width: 20vw;
     border: none;
-    background-color: #e24e4e;
+    background-color: #FF1654;
     margin-top: 3vw;
     float: left;
     margin-right: 1vw;
+    background-image: linear-gradient(-65deg, #FF1654 50%, #c51947 50%);
+}
+
+.first .scissors p {
+    color: #FF1654;
+    transform: scale(0.9);
+    padding-top: 3vh;
+    font-size: 8.5vh;
+    animation: scissors 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) backwards infinite alternate;
+    text-shadow: 0 0.1em #861231, 0.05em -0.03em 0 #861231;
+}
+
+@keyframes scissors {
+    0% {
+        transform: scale(0.8);
+    }
+    90%,
+    100% {
+        transform: scale(0.9) rotateZ(2deg);
+    }
 }
 
 .first button {
@@ -57,18 +100,19 @@ body {
     margin-top: 2vh;
     height: 10vh;
     width: 6vw;
-    box-shadow: 0 1vh #2ca8c7;
-    background-color: #17c0eb;
+    box-shadow: 0 1vh #e1b12c;
+    background-color: #fbc531;
     margin-left: 93vw;
 }
 
 .first .info {
     margin-top: 2vh;
-    background-color: #17c0eb;
+    background-color: #636e72;
     margin-left: 1.5vw;
     height: 10vh;
     width: 6vw;
-    box-shadow: 0 1vh #2ca8c7;
+    box-shadow: 0 1vh #2d3436;
+    color: #2d3436;
 }
 
 .first .fullscreen {
@@ -106,7 +150,7 @@ body {
 }
 
 .first .info:active {
-    box-shadow: 0 0.6vh #2ca8c7;
+    box-shadow: 0 0.6vh #2d3436;
     transform: translateY(4px);
 }
 
