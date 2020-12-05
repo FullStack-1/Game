@@ -147,54 +147,25 @@ header button {
 }
 
 .container1 {
-    margin: 0 auto;
     position: absolute;
     z-index: 9;
-    top: 25vh;
-    width: 30vw;
-    height: 64vh;
-    justify-content: center;
+    width: 50vh;
+    height: 50vh;
     align-items: center;
     display: flex;
     text-align: center;
-    left: 35vw;
+    border-radius: 8vh 20vh;
+    background-image: linear-gradient(65deg, #8C5329 50%, #AE8669 50%);
+    animation: 3s ease-in-out infinite alternate;
+    margin: 25vh 40vw;
 }
 
-.container1 span:nth-child(1) {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to right, #C2185B, #E64A19);
-    opacity: 0.9;
-    border-radius: 48% 62% 63% 37%/ 41% 44% 56% 59%;
-    transition: 0.5s;
-    animation: animate 4s linear infinite;
-}
-
-.container1 :hover span:nth-child(1) {
-    border: none;
-}
-
-.container1 span:nth-child(2) {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to right, #18FFFF, #009688);
-    border-radius: 38% 62% 63% 37%/ 41% 44% 56% 59%;
-    transition: 0.5s;
-    animation: animate 6s linear infinite;
-}
-
-@keyframes animate {
+@keyframes animate1 {
     0% {
-        transform: rotate(360deg);
+        transform: translateX(25%);
     }
     100% {
-        transform: rotate(0deg);
+        transform: translateX(-25%);
     }
 }
 
@@ -203,7 +174,6 @@ header button {
 }
 
 .content p {
-    font-family: 'Architects Daughter', cursive;
     font-weight: 1000;
     font-size: 8vh;
 }
@@ -221,10 +191,9 @@ header button {
     border: none;
     box-shadow: 0 1.5vh #a12821;
     position: relative;
-    top: 5vh;
-    left: 6vw;
-    float: left;
     font-size: 5vh;
+    height: 2vh;
+    padding: 1vh
 }
 
 .cross1 {
@@ -233,10 +202,9 @@ header button {
     box-shadow: 0 1.5vh rgb(7, 68, 7);
     border: none;
     position: relative;
-    top: 5vh;
-    right: 6vw;
-    float: right;
     font-size: 5vh;
+    height: 2vh;
+    padding: 1vh
 }
 
 .cross:active {
@@ -268,25 +236,31 @@ i {
 .I {
     width: 55vw;
     height: 65vh;
-    background-image: linear-gradient(45deg, #dfca65, #f6e58d, #f6e58d, #e4d27b, #f0d862);
     margin-top: 10vh;
     position: absolute;
     z-index: 9;
     left: 25vw;
+    background-image: linear-gradient(65deg, #8C5329 50%, #AE8669 50%);
+    border: 2vh solid #79421c;
+    animation: info 2s ease-in-out backwards infinite alternate;
+}
+
+@keyframes info {
+    0% {
+        transform: scale(1.1);
+    }
 }
 
 .I h1 {
     text-align: center;
-    font-family: cursive;
     font-size: 4vw;
-    color: #d50000;
     padding-top: 4vh;
+    text-shadow: 0 0.1em #643513, 0.05em -0.03em 0 #6b3711;
+    color: #a3551e;
 }
 
 .I p {
-    font-family: cursive;
     font-size: 2vw;
-    color: #d50000;
     margin-left: 2vw;
     line-height: 5vh;
 }

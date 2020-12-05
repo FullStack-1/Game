@@ -1,3 +1,7 @@
+* {
+    font-family: "Luckiest Guy", cursive;
+}
+
 .second .container {
     margin-top: 60vh;
     width: 100%;
@@ -124,7 +128,6 @@
 }
 
 .second .content p {
-    font-family: 'Architects Daughter', cursive;
     font-weight: 1000;
     font-size: 8vh;
 }
