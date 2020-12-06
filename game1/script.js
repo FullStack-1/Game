@@ -16,9 +16,9 @@ function reset() {
     computer = 0;
     player = 0;
     total_round = 5;
-    $(".main_container").css("display", "none");
-    $(".result").css("display", "none");
-    $("#reset").css("display", "block");
+    $(".main_container").fadeOut();
+    $(".result").fadeOut();
+    $("#reset").fadeIn();
     document.getElementById('myAudio').play();
 }
 
@@ -29,13 +29,13 @@ function reset_all() {
     total_round = 5;
 
     $('.box').css('display', 'block');
-    $("#reset").css("display", "none");
+    $("#reset").fadeOut();
     $("#text").text("Start playing by click any of these 3 buttons");
     $("#computer").text("" + computer);
     $("#player").text("" + player);
     $("#round").text("" + total_round);
-    $(".main_container").css("display", "block");
-    $(".result").css("display", "block");
+    $(".main_container").fadeIn();
+    $(".result").fadeIn();
     $("#loser").css('display', 'none');
     $("#winner").css('display', 'none');
 

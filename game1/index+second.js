@@ -38,24 +38,24 @@ function closeFullscreen() {
 }
 
 function third_page() {
-    $(".third").css("display", "block");
-    $(".second").css("display", "none");
+    $(".third").fadeIn();
+    $(".second").fadeOut();
 
 }
 
 function secondpage() {
-    $(".second").css("display", "block");
-    $(".first").css("display", "none");
+    $(".second").fadeIn();
+    $(".first").fadeOut();
 
 }
 
 
 function firstpage() {
-    $(".first").css("display", "block");
-    $(".second").css("display", "none");
-    $(".container1").css("display", "none");
+    $(".first").fadeIn();
+    $(".second").fadeOut();
+    $(".container1").fadeOut();
     $(".body").toggleClass("blur");
-    $('.third').css("display", "none");
+    $('.third').fadeOut();
 }
 
 $(document).ready(function() {
