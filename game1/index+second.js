@@ -38,43 +38,44 @@ function closeFullscreen() {
 }
 
 function third_page() {
-    $(".third").fadeIn();
-    $(".second").fadeOut();
+
+    $(".second").fadeOut('slow');
+    $(".third").slideDown('slow');
 
 }
 
 function secondpage() {
-    $(".second").fadeIn();
-    $(".first").fadeOut();
+    $(".second").slideDown('slow');
+    $(".first").slideUp('slow');
 
 }
 
 
 function firstpage() {
-    $(".first").fadeIn();
-    $(".second").fadeOut();
-    $(".container1").fadeOut();
+    $(".first").slideDown('slow');
+    $(".second").slideUp('slow');
+    $(".container1").slideUp('slow');
     $(".body").toggleClass("blur");
-    $('.third').fadeOut();
+    $('.third').slideUp('slow');
 }
 
 $(document).ready(function() {
     $(".cross").on({
         click: function() {
-            $(".container1").toggle();
+            $(".container1").toggle('slow', 'swing');
             $(".body").toggleClass("blur");
         },
     });
     $(".cross1").on({
         click: function() {
-            $(".container1").toggle();
+            $(".container1").toggle('slow', 'swing');
             $(".body").toggleClass("blur");
 
         },
     });
     $(".info").on({
         click: function() {
-            $(".i").toggle();
+            $(".i").toggle('fast', 'linear');
 
             $(".body").toggleClass("blur");
 
@@ -82,7 +83,7 @@ $(document).ready(function() {
     });
     $(".play1").on({
         click: function() {
-            $(".i").toggle();
+            $(".i").toggle('fast', 'linear');
             $(".body").toggleClass("blur");
 
         },

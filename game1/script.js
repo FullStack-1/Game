@@ -81,11 +81,11 @@ function animation() {
 }
 
 function timeout() {
-    $('.left-img').css('display', 'none');
-    $('.right-img').css('display', 'none');
-    $('.vs').css('display', 'none');
-    $('.button').css('display', 'block');
-    $('.heading').css('display', 'block');
+    $('.left-img').slideUp();
+    $('.right-img').slideUp();
+    $('.vs').slideUp();
+    $('.button').slideDown();
+    $('.heading').slideDown();
 }
 
 function decreament() {
@@ -162,8 +162,8 @@ function winner_scissors(i, x) {
 
 function default_img() {
     $('h2').css('display', 'block');
-    $('.heading').css('display', 'none');
-    $('.button').css('display', 'none');
+    $('.heading').slideUp('fast');
+    $('.button').slideUp('fast');
     $('.default_left').css('display', 'block');
     $('.default_right').css('display', 'block');
 }
