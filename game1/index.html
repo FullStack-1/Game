@@ -68,7 +68,7 @@
         
         .bg {
             animation: slide 3s ease-in-out infinite alternate;
-            background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);
+            background-image: linear-gradient(-60deg, #6c3 50%, rgb(10, 75, 119) 50%);
             bottom: 0;
             left: -50%;
             opacity: .5;
@@ -124,8 +124,17 @@
         <source src="audio.mp3" type="audio/mpeg">
     </audio>
     <audio id="myAudio1" style="display: none;">
-        <source src="Boing-sound (1).mp3" type="audio/mpeg">
+        <source src="click.wav" type="audio/mpeg">
     </audio>
+    <audio id="myAudio2" style="display: none">
+        <source src="Cycle_hands.mp3" type="audio/mpeg" />
+      </audio>
+    <audio id="win" style="display: none">
+        <source src="Win.wav" type="audio/mpeg" />
+      </audio>
+    <audio id="lose" style="display: none">
+        <source src="Lose.wav" type="audio/mpeg" />
+      </audio>
 
     <div class="container1" style="display: none;">
         <span></span>
@@ -153,8 +162,9 @@
             <button class="info" onclick="document.getElementById('myAudio1').play();"><i class="fa fa-info"></i></button>
             <button class="fullscreen fullscreen-off" onclick="closeFullscreen(); document.getElementById('myAudio1').play();" style="display: none;"><i class="fa fa-compress"></i></button>
             <button class="fullscreen fullscreen-on" onclick="openFullscreen(); document.getElementById('myAudio1').play();"> <i class="fa fa-expand"></i></button>
-            <button class="sound sound-off" style="display: none" onclick="document.getElementById('myAudio').play();"><i class="fa fa-volume-off"></i></button>
             <button class="sound sound-on" onclick="document.getElementById('myAudio').pause();"><i class="fa fa-volume-up"></i></button>
+            <button class="sound sound-off" style="display: none" onclick="document.getElementById('myAudio').play();"><i class="fa fa-volume-off"></i></button>
+
         </header>
         <div class="rock">
             <p><span>Rock</span></p>
@@ -182,7 +192,7 @@
         <div class="container">
             <div class="sec">
                 <h2>Start to play</h2>
-                <div class="box1" onclick="third_page()">
+                <div class="box1" onclick="third_page();document.getElementById('myAudio1').play();">
                     <i class="fa fa-desktop act" aria-hidden="true"></i>
                     <span class="head">vs</span>
                     <i class="fa fa-user act1" aria-hidden="true"></i>
@@ -191,7 +201,7 @@
             <div class="box2"></div>
         </div>
     </div>
-    <div class="third" style="display: none;">
+    <div class="third body" style="display: none;">
         <header class="body">
             <button class="info" onclick="document.getElementById('myAudio1').play();">
             <i class="fa fa-info"></i>
@@ -213,9 +223,9 @@
           </button>
         </header>
 
-        <button id="reset" onclick="reset_all()"><h1>Reset</h1></button>
-        <div class="main_container">
-            <div class="box">
+        <button class="body" id="reset" onclick="reset_all();document.getElementById('myAudio1').play();"><h1>Reset</h1></button>
+        <div class="body main_container">
+            <div class="box body">
                 <h2 class="heading">Your Turn</h2>
                 <div class="button">
                     <button id="button" class="zero" onclick="document.getElementById('myAudio2').play();">
@@ -245,9 +255,9 @@
             <h1 id="winner">Winner</h1>
             <h1 id="loser">Loser</h1>
         </div>
-        <div class="result">
-            <h4 id="text">Start playing by click any of these 3 buttons</h4>
-            <div class="player">
+        <div class="result body">
+            <h4 id="text body">Start playing by click any of these 3 buttons</h4>
+            <div class="player body">
                 <p>Player</p>
                 <p id="player">0</p>
             </div>

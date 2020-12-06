@@ -19,6 +19,7 @@ function reset() {
     $(".main_container").css("display", "none");
     $(".result").css("display", "none");
     $("#reset").css("display", "block");
+    document.getElementById('myAudio').play();
 }
 
 function reset_all() {
@@ -47,10 +48,14 @@ function round() {
         $('.heading').css('display', 'none');
         if (computer >= 3) {
             $("#loser").css('display', 'block');
+            document.getElementById('myAudio').pause();
+            document.getElementById('lose').play();
         } else {
             $("#winner").css('display', 'block');
+            document.getElementById('myAudio').pause();
+            document.getElementById('win').play();
         }
-        setTimeout(reset, 2000);
+        setTimeout(reset, 3500);
     }
 
 }
@@ -202,48 +207,3 @@ $(document).ready(function() {
     });
 
 });
-// var CheckScreenOrientation = pc.createScript('checkScreenOrientation');
-
-// CheckScreenOrientation.prototype.initialize = function() {
-//     this.paused = false;
-
-//     this.app.graphicsDevice.on('resizecanvas', function(width, height) {
-//         calculateDimensions(width, height);
-//     });
-
-//     function calculateDimensions(w, h){   
-//     w = window.innerWidth;
-//     h = window.innerHeight;
-
-//     if(w > h){
-//         console.log("Landscape");
-//         togglePaused (false);
-//     }
-//     else if (w === h){
-//         console.log("square");
-//         togglePaused (true);
-//     }
-//     else{
-//         console.log("Portrait");
-//         togglePaused (true);
-//     }
-//     }    
-
-//     function togglePaused(shouldPause){
-//         if (shouldPause === false) {
-//             this.pc.app.timeScale = 1;
-//             console.log("Resume Game");
-//         } else {
-//             this.pc.app.timeScale = 0;
-//             console.log("Pause Game");
-//         }
-//     }
-// };
-// function totalRound() {
-//     total_round = total_round + 1;
-//     if (total_round == 3) {
-//         alert(computer);
-//     } else {
-//         alert("player", player);
-//     }
-// }
