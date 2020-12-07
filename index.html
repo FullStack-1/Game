@@ -42,9 +42,6 @@
             button {
                 display: none;
             }
-            .main_container * {
-                display: none;
-            }
             .rotate {
                 display: block;
             }
@@ -52,6 +49,12 @@
             .first div,
             .second div,
             .third div,
+            .third img,
+            .third button,
+            .third .result,
+            .third .main_container,
+            #winner,
+            #loser,
             #rotate {
                 display: none;
             }
@@ -224,7 +227,7 @@
         </header>
 
         <button class="body" id="reset" onclick="reset_all();document.getElementById('myAudio1').play();"><h1>Reset</h1></button>
-        <div class="body main_container">
+        <div class="main_container body">
             <div class="box body">
                 <h2 class="heading">Your Turn</h2>
                 <div class="button">
