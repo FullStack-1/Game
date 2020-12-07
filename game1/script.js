@@ -96,18 +96,18 @@ function decreament() {
 function winner_rock(i, x) {
     // when player selects rock this function should be called
     if (i == 0) {
-        $("#text").text("draw as computer also selects rock");
+        $("#text").text("Draw as computer also selects rock");
         setTimeout(cpu_rock, 1090);
     } else if (i == 1) {
         computer = computer + 1;
-        $("#text").text("Computer win as computer selects paper ");
+        $("#text").text("Paper covers Rock");
         setTimeout(cpu_paper, 1090);
         $("#computer").text("" + computer);
         decreament();
 
     } else if (i == 2) {
         player = player + 1;
-        $("#text").text("USER win as computer selects scissor");
+        $("#text").text("Rock crashes Scissors");
         setTimeout(cpu_scissors, 1090);
         $("#player").text("" + player);
         decreament();
@@ -119,7 +119,7 @@ function winner_rock(i, x) {
 function winner_paper(i, x) {
     // when player selects paper this function should be called
     if (i == 1) {
-        $("#text").text("draw as computer also selects paper");
+        $("#text").text("Draw as computer also selects paper");
         setTimeout(cpu_paper, 1090);
 
     } else if (i == 0) {
@@ -130,7 +130,7 @@ function winner_paper(i, x) {
         decreament();
     } else if (i == 2) {
         computer = computer + 1;
-        $("#text").text("Computer win as computer selects scissor");
+        $("#text").text("Scissor cuts Paper");
         setTimeout(cpu_scissors, 1090);
         $("#computer").text("" + computer);
         decreament();
@@ -146,13 +146,13 @@ function winner_scissors(i, x) {
 
     } else if (i == 1) {
         player = player + 1;
-        $("#text").text("USER win as computer selects paper");
+        $("#text").text("Scissor cuts Paper");
         setTimeout(cpu_paper, 1090);
         $("#player").text("" + player);
         decreament();
     } else if (i == 0) {
         computer = computer + 1;
-        $("#text").text("Computer win as computer selects rock");
+        $("#text").text("Rock crashes Scissors");
         setTimeout(cpu_rock, 1090);
         $("#computer").text("" + computer);
         decreament();

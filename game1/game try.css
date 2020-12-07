@@ -22,7 +22,7 @@ header {
 header .sound {
     margin-top: 5vh;
     height: 9vh;
-    width: 5vw;
+    width: 9vh;
     box-shadow: 0 1vh #e1b12c;
     background-color: #fbc531;
     margin-left: 88vw;
@@ -32,7 +32,7 @@ header .sound {
 header .fullscreen {
     margin-top: 5vh;
     height: 9vh;
-    width: 5vw;
+    width: 9vh;
     box-shadow: 0 1vh #2ca8c7;
     background-color: #17c0eb;
     margin-left: 82vw;
@@ -53,7 +53,7 @@ header .cross {
     background-color: #cc322a;
     margin-left: 94vw;
     height: 9vh;
-    width: 5vw;
+    width: 9vh;
     box-shadow: 0 1.5vh #a12821;
     color: #7e2317;
 }
@@ -78,7 +78,7 @@ header button {
     background-color: #636e72;
     margin-left: 2vw;
     height: 9vh;
-    width: 5vw;
+    width: 9vh;
     box-shadow: 0 1vh #2d3436;
     color: #2d3436
 }
@@ -202,7 +202,6 @@ header button {
     box-shadow: 0 1.5vh #a12821;
     position: relative;
     font-size: 5vh;
-    height: 2vh;
     padding: 1vh
 }
 
@@ -213,7 +212,6 @@ header button {
     border: none;
     position: relative;
     font-size: 5vh;
-    height: 2vh;
     padding: 1vh
 }
 
@@ -301,8 +299,8 @@ i {
     position: absolute;
     top: 60vh;
     left: 25vw;
-    height: 12vh;
-    width: 6vw;
+    height: 10vh;
+    width: 10vh;
     color: #0D47A1;
     background-color: teal;
     box-shadow: 0 1vh #2ca8c7;

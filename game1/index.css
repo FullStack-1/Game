@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+.first div,
+.first img {
+    transition: all .5s ease-in-out
+}
+
 .first .rock {
     height: 92vh;
     width: 20vw;
@@ -12,7 +17,7 @@
     margin-top: 3vw;
     float: left;
     margin-right: 1vw;
-    margin-left: 19vw;
+    margin-left: 15vw;
 }
 
 .first p {
@@ -22,7 +27,7 @@
 .first .rock p {
     transform: rotate(-360deg);
     transform: scale(0.5);
-    font-size: 12vh;
+    font-size: 6vw;
     animation: scissors 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) backwards infinite alternate;
     color: #d6e0a9;
     text-shadow: 0 0.1em #707557, 0.05em -0.03em 0 #707557;
@@ -41,7 +46,7 @@
 .first .paper p {
     transform: scale(0.9);
     color: #247BA0;
-    font-size: 12vh;
+    font-size: 6vw;
     animation: paper 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) backwards infinite alternate;
     text-shadow: 0 0.1em #0c3547, 0.05em -0.03em 0 #124f69;
 }
@@ -71,7 +76,7 @@
     color: #FF1654;
     transform: scale(0.9);
     padding-top: 3vh;
-    font-size: 8.5vh;
+    font-size: 6.5vh;
     animation: scissors 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) backwards infinite alternate;
     text-shadow: 0 0.1em #861231, 0.05em -0.03em 0 #861231;
 }
@@ -89,7 +94,7 @@
 .first button {
     outline: none;
     border: none;
-    font-size: 8vh;
+    font-size: 6vh;
     position: absolute;
     color: #35405e;
     text-align: center;
@@ -99,18 +104,19 @@
 .first .sound {
     margin-top: 2vh;
     height: 10vh;
-    width: 6vw;
+    width: 10vh;
     box-shadow: 0 1vh #e1b12c;
     background-color: #fbc531;
-    margin-left: 93vw;
+    margin-left: 92vw;
 }
 
 .first .info {
     margin-top: 2vh;
     background-color: #636e72;
-    margin-left: 1.5vw;
+    margin-left: 3vh;
+    margin-right: 3vw;
     height: 10vh;
-    width: 6vw;
+    width: 10vh;
     box-shadow: 0 1vh #2d3436;
     color: #2d3436;
 }
@@ -118,7 +124,7 @@
 .first .fullscreen {
     margin-top: 2vh;
     height: 10vh;
-    width: 6vw;
+    width: 10vh;
     box-shadow: 0 1vh #2ca8c7;
     background-color: #17c0eb;
     margin-left: 85vw;
@@ -130,10 +136,10 @@
 }
 
 .first .play {
-    margin-top: 40vh;
-    margin-left: -12vw;
-    height: 14vh;
-    width: 8vw;
+    margin-top: 44vh;
+    margin-left: -11vw;
+    height: 12vh;
+    width: 12vh;
     color: rgb(64, 85, 22);
     background-color: yellowgreen;
     box-shadow: 0 1.5vh rgb(107, 145, 31);
@@ -159,44 +165,25 @@
     transform: translateY(4px);
 }
 
+.first img {
+    margin-top: -3.5vh
+}
+
 .first .hand-rock {
     margin-left: 2vw;
-    margin-top: -3.5vh;
     height: 80vh;
     width: 15vw;
 }
 
 .first .hand-scissors {
     margin-left: 2vw;
-    margin-top: -2.8vh;
     height: 80vh;
     width: 15vw;
+    margin-top: .5vh
 }
 
 .first .hand-paper {
     margin-left: 2vw;
-    margin-top: -1.5vh;
-    height: 78vh;
+    height: 80vh;
     width: 15vw;
-}
-
-.first .rock-banner {
-    margin-top: -25vh;
-    margin-left: 0.5vw;
-    height: 70vh;
-    width: 20vw;
-}
-
-.first .paper-banner {
-    margin-top: -35vh;
-    margin-left: -.8vw;
-    height: 82vh;
-    width: 22vw;
-}
-
-.first .scissors-banner {
-    margin-top: -25vh;
-    margin-left: 0.2vw;
-    height: 70vh;
-    width: 20vw;
 }
