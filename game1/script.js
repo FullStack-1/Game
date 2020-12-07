@@ -19,7 +19,10 @@ function reset() {
     $(".main_container").fadeOut();
     $(".result").fadeOut();
     $("#reset").fadeIn();
-    document.getElementById('myAudio').play();
+    if ($('.sound-on').css('display') == 'block')
+        document.getElementById('myAudio').play();
+    else
+        document.getElementById('myAudio').pause();
 }
 
 function reset_all() {
@@ -46,13 +49,14 @@ function round() {
     if (computer >= 3 || player >= 3 || computer + player == 5) {
         $('.box').css('display', 'none');
         $('.heading').css('display', 'none');
+        document.getElementById('myAudio').pause();
         if (computer >= 3) {
             $("#loser").css('display', 'block');
-            document.getElementById('myAudio').pause();
+
             document.getElementById('lose').play();
         } else {
             $("#winner").css('display', 'block');
-            document.getElementById('myAudio').pause();
+
             document.getElementById('win').play();
         }
         setTimeout(reset, 3500);

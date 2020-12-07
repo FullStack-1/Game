@@ -10,6 +10,10 @@ $(document).ready(function() {
             $(".fullscreen").toggle();
         }
     });
+    if ($('.sound-on').css('display') == 'block')
+        document.getElementById('myAudio').play();
+    else
+        document.getElementById('myAudio').pause();
 });
 var element = document.documentElement;
 
